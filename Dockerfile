@@ -11,7 +11,7 @@ WORKDIR /app
 COPY . /app
 
 
-ENV FLASK_APP ./app/443_fructe.py
+ENV FLASK_APP ./filme.py
 
 EXPOSE 5000
 
