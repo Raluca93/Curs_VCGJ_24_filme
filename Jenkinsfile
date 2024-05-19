@@ -5,7 +5,7 @@ pipeline {
         FLASK_APP = 'filme.py' 
     }
     
-
+    stages {
         
     
 
@@ -24,7 +24,7 @@ pipeline {
             }
                 }
             }
-        
+        }
     }
 
 
