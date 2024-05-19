@@ -3,9 +3,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 import sys
-sys.path.append("../")
-
-import lib.lib_filme as filme
+sys.path.append("/home/ion/proiect/Curs_VCGJ_24_filme/app")
+from app.lib import lib_filme as filme
 
 
 
