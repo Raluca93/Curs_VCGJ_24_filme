@@ -1,11 +1,14 @@
 pipeline {
     agent any
-
+    
+    environment {
+        FLASK_APP = 'filme.py' 
+    }
+    
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from GitHub repository
-                git 'https://github.com/Raluca93/Curs_VCGJ_24_filme.git'
+                 git branch: 'dev-andreichichi', url: 'https://github.com/Raluca93/Curs_VCGJ_24_filme.git'
             }
         }
         
@@ -13,12 +16,20 @@ pipeline {
 
         stage('Run tests') {
             steps {
-                // Run the test_lotr.py script
-                 dir('app/tests/') {
-                    sh 'python -m unittest test_Lotr.py'
+             script{   
+                    def testResult = sh(script: 'flask test', returnStatus: true)
+                    
+                    
+                    if (testResult == 0) {
+                        echo "Tests were successful!"
+                    } else {
+                        echo "Tests failed!"
+                        error "There are test failures."
+                    }
+            }
                 }
             }
         }
     }
-}
+
 
