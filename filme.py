@@ -5,7 +5,7 @@ from flask import render_template
 import app.lib.description as dscr
 import app.lib.rating as rate
 import app.tests.test_Lotr as tst
-
+import pytest
 
 #from app.lib import network
 #from app.lib import linux
@@ -43,8 +43,10 @@ def test():
     Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     
     """
-    import pytest
-    sys.exit(pytest.main(["."]))
+
+    errno = pytest.main(["-x", "app/tests"])
+    sys.exit(errno)
+    #sys.exit(pytest.main(["."]))
 
 
 if __name__ == '__main__':
