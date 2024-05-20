@@ -1,5 +1,5 @@
-from flask import Flask, url_for
-from app.lib.biblioteca_fructe import *
+from flask import Flask , url_for
+from app.lib import lib_filme as filme
 
 app = Flask(__name__)
 
@@ -15,9 +15,9 @@ def index():
 
     
 @app.route('/V_For_Vendetta', methods=['GET'])
-def .():
-	quotes = quotes()
-	descriere = descriere_film() 
+def V_For_Vendetta():
+	quotes = filme.quotes()
+	descriere = filme.descriere_film() 
 	
 	ret = "<h1>V for Vendetta</h1>"
 	
@@ -40,7 +40,7 @@ def .():
 
 @app.route('/V_For_Vendetta/quotes', methods=['GET'])
 def view_quotes_V():
-    quotes = quotes()  
+    quotes =filme.quotes()  
     
     ret = "<h1>Quotes from V:</h1>"
     ret += f"<a href={url_for('index')}>[Filme]</a> | "
@@ -50,8 +50,8 @@ def view_quotes_V():
     return ret
 
 @app.route('/V_For_Vendetta/descriere', methods=['GET'])
-def view_descriere_acai():
-    descriere = descriere_film()   
+def view_descriere_V():
+    descriere =filme.descriere_film()   
     
     ret = "<h1>Descriere V for Vendetta:</h1>"
     ret += f"<a href={url_for('index')}>[Filme]</a> | "
