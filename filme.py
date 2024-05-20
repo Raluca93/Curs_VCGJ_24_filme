@@ -1,6 +1,6 @@
 import sys
 from flask import Flask, url_for
-from lib import biblioteca_filme
+from app.lib import biblioteca_filme
 
 actiune_iron_man = biblioteca_filme.actiune_iron_man()
 distributie_iron_man = biblioteca_filme.distributie_iron_man()
