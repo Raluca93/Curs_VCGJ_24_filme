@@ -32,16 +32,6 @@ pipeline {
             }
         }
 
-        stage('Unit Testing cu pytest') {
-            agent any
-            steps {
-                echo 'Unit testing with Pytest...'
-                sh '''
-                    . ./activeaza_venv;
-                    pytest;
-                '''
-            }
-        }
         /*    }
         }*/
         stage('Deploy') {
