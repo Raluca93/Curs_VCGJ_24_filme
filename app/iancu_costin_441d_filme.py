@@ -85,7 +85,7 @@ def test():
     Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     """
     import pytest
-    errno = pytest.main(["-x", "app/tests"])
+    errno = pytest.main(["-x", "app/test"])
     sys.exit(errno)
     #sys.exit(pytest.main(["."]))
 
