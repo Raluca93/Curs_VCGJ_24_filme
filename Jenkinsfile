@@ -7,7 +7,11 @@ pipeline {
     
     stages {
         
-    
+    stage('install dependencies'){
+    	steps{
+    		sh(script:'pip install flask')
+    	}
+    }
 
         stage('Run tests') {
             steps {
