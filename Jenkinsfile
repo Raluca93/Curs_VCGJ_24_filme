@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh '''
-                    cd app;
+                    cd app
                     ls -l;
                     python3 -m venv .venv
                     . .venv/bin/activate
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Pylint...'
                 sh '''
-                    cd app;
+                    cd app
                     . .venv/bin/activate
                     if [ $? -eq 0 ]
                     then
@@ -43,7 +43,7 @@ pipeline {
             steps {
                 echo 'Unit testing with Pytest...'
                 sh '''
-                    cd app;
+                    cd app
                     . .venv/bin/activate
                     python3 -m pytest -v
                 '''
