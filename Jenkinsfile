@@ -31,7 +31,8 @@ pipeline {
                         python3 -m venv .venv
                         . .venv/bin/activate
                     fi
-                    
+                    export PYTHONPATH=$(pwd)
+
                     pylint --exit-zero lib/*.py
                     pylint --exit-zero test/*.py
                     pylint --exit-zero iancu_costin_441d_filme.py

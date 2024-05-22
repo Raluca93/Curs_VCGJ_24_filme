@@ -1,8 +1,9 @@
+import sys
 import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-import sys
+
 sys.path.append("../")
 
 from lib import biblioteca_filme as filme
