@@ -46,6 +46,7 @@ pipeline {
                 sh '''
                     cd app
                     . .venv/bin/activate
+                    export PYTHONPATH=$(pwd)
                     python3 -m pytest -v
                 '''
             }
