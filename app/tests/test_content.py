@@ -22,7 +22,7 @@ def test_recenzii_film():
         logger.info(f"Functia recenzii_film() functioneaza corect:\n")
         assert True
     else:
-        logger.error(f"Functia recenzii_film() NU functioneaza corect:\n{recenzii}")
+        logger.error(f"Functia recenzii_film() NU functioneaza corect:\n")
         assert False
 
     if "a fost mai critic, menționând că filmul împrumută prea" in recenzii:
