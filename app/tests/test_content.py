@@ -11,8 +11,7 @@ from lib import biblioteca_filme as filme
 def test_recenzii_film():
     recenzii = filme.recenzii_film()
 
-    #if "a remarcat că filmul are o structură frenetică și explozivă" in recenzii:
-    if "programul functioneaza foarte bine, foarte foarte bine" in recenzii:
+    if "a remarcat că filmul are o structură frenetică și explozivă" in recenzii:
         logger.info(f"Functia recenzii_film() functioneaza corect:\n")
         assert True
     else:
