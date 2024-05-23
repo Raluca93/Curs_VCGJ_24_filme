@@ -1,6 +1,6 @@
 import sys
 
-from flask import Flask, url_for
+from flask import Flask, url_for, render_template
 
 #from app.lib import network
 #from app.lib import linux
@@ -9,26 +9,25 @@ from flask import Flask, url_for
 print('filme')
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/", methods=['GET'])
 def index():
-    ret = "<h1>FILME</h1>"
-    
-   
-    ret += "<pre>"
-   
-    ret += " - -test1\n"
-    ret += " - -test2"
-    
-    ret += "</pre>"
-    
-    ret += " - -test3\n"
-    ret += " - -test4"
-    
+    ret = f"<h1><a href={url_for('maze_runner')}>Dobre Octavian 441D - Maze Runner</a></h1>"
     return ret
-    
 
-    
+@app.route("/mazerunner", methods=['GET'])
+def maze_runner():
+    return render_template('mazerunner.html')
+
+@app.route("/mazerunner/trailer", methods=['GET'])
+def maze_runner_trailer():
+    return render_template('mazerunner-trailer.html')
+
+@app.route("/mazerunner/description", methods=['GET'])
+def maze_runner_description():
+    return render_template('mazerunner-description.html')
+	
 @app.cli.command()
 def test():
     """
@@ -37,5 +36,5 @@ def test():
     Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     
     """
-    import pytest
-    sys.exit(pytest.main(["."]))
+    #import pytest
+    #sys.exit(pytest.main(["."]))

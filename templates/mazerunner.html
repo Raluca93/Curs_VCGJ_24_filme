@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Maze Runner</title>
+    <style>
+
+        
+
+
+    </style>
+</head>
+<body>
+
+<div class="div-back">
+<button class = "back" onclick="location.href='{{url_for('index')}}'">Main App</button>
+</div>
+
+<div class="container">
+
+    
+    <h1>Maze Runner</h1>
+    <div class = "div-poster">
+        <img src="{{url_for('static',filename='images/unnamed.jpg')}}" alt="Posterul filmului" class="poster">
+    </div></br>
+    <p><strong>Regizor:</strong> Wes Ball</p>
+    <p><strong>Distribuție:</strong> Dylan O'BrienKaya, Scodelario, Will Poulter</p>
+    <p><strong>Gen:</strong> Action, Mistery, Sci-Fi</p>
+    <p><strong>Anul:</strong> September 19, 2014</p>
+    <!-- <p><strong>Descriere:</strong> Descrierea scurtă a filmului</p> -->
+</div>
+
+<div class = "div-buttons">
+    <button onclick="location.href='{{url_for('maze_runner_description')}}'">Description</button>
+    <button onclick="location.href='{{url_for('maze_runner_trailer')}}'">Trailer</button>
+</div>
+
+
+</body>
+</html>
