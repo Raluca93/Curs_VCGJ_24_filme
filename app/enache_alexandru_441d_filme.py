@@ -95,13 +95,15 @@ def get_recenzii():
 def test():
     """
     Rulare 'unit tests'
-
+    
     Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     """
+    
     import pytest
     errno = pytest.main(["-x", "app/tests"])
     sys.exit(errno)
     #sys.exit(pytest.main(["."]))
-
-if __filme__ == "filme_app":
+    
+if __name__ == "__main__":
+#if __filme__ == "filme_app":
     app.run()
