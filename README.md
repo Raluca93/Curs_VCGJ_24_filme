@@ -68,10 +68,9 @@ In directorul 'app' rulati comenzile:
 
 # EXEMPLE pagina web 
 ## Pagina principala
-![image](https://github.com/crchende/sysinfo/assets/57460107/2c106097-0954-4d6f-82ee-77fa5f052d1f)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-andreichichi/static/Screenshot%20from%202024-05-24%2000-01-30.png)
 
-## Vizualizare versiune ubuntu
-![image](https://github.com/crchende/sysinfo/assets/57460107/0316f339-a277-4418-a1b0-d8ec0f022472)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-andreichichi/static/Screenshot%20from%202024-05-24%2000-02-55.png)
 
 
 
@@ -120,10 +119,7 @@ Executia testelor se face cu oricare din comenzile de mai jos, apelate din direc
 - CI = Continuous Integration
 
 ## Exemplu executie pipeline Jenkins
-![image](https://github.com/crchende/sysinfo/assets/57460107/8fdaa372-44ee-409b-855c-053e78baf800)
-
-## Exemplu executie Workflow in GitHub Actions
-![image](https://github.com/crchende/sysinfo/assets/57460107/9981d699-aa34-4ec5-aa94-d0284ea93fca)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-andreichichi/static/Screenshot%20from%202024-05-24%2000-07-45.png)
 
 
 
