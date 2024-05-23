@@ -77,18 +77,20 @@ def get_recenzii():
     recenzii=biblioteca_filme.recenzii_film()
     return recenzii
 
-#@app.cli.command()
-#def test():
-#    """
-#    Rulare 'unit tests'
-#
-#    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
-#    """
-#    import pytest
-#    errno = pytest.main(["-x", "app/test"])
-#    sys.exit(errno)
+@app.cli.command()
+def test():
+    """
+    Rulare 'unit tests'
+
+    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
+    """
+    import pytest
+    errno = pytest.main(["-x", "app/test"])
+    sys.exit(errno)
     #sys.exit(pytest.main(["."]))
 
+if __name__ == "__main__":
+
 #if __filme__ == "filme_app":
-#    app.run()
-app.run(host = "127.0.0.1", port = 5001)
+    app.run()
+#app.run(host = "127.0.0.1", port = 5001)
