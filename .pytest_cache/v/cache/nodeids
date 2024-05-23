@@ -1,0 +1,6 @@
+[
+  "app/tests/test_Dune.py::test_descriere_Dune",
+  "app/tests/test_Dune.py::test_rating_Dune",
+  "app/tests/test_Lotr.py::test_descriere",
+  "app/tests/test_Lotr.py::test_rating"
+]
