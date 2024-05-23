@@ -1,0 +1,6 @@
+[
+  "app/tests/test_Lotr.py::test_descriere",
+  "app/tests/test_Lotr.py::test_rating",
+  "app/tests/test_TheHobbit.py::test_descriere",
+  "app/tests/test_TheHobbit.py::test_year"
+]
