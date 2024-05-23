@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        FLASK_APP = './app/enache_alexandru_441d_filme.py' 
+        FLASK_APP = './app/iancu_costin_441d_filme.py' 
     }
     
     stages {
