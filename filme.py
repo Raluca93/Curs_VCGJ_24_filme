@@ -1,5 +1,4 @@
 import sys
-
 from flask import Flask, url_for, render_template
 
 #from app.lib import network
@@ -9,7 +8,9 @@ from flask import Flask, url_for, render_template
 print('filme')
 
 app = Flask(__name__)
+
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TESTING'] = True
 
 @app.route("/", methods=['GET'])
 def index():
@@ -27,14 +28,15 @@ def maze_runner_trailer():
 @app.route("/mazerunner/description", methods=['GET'])
 def maze_runner_description():
     return render_template('/Octavian/mazerunner-description.html')
-	
-@app.cli.command()
-def test():
-    """
-    Rulare 'unit tests'
+
+# def test():
+    # """
+    # Rulare 'unit tests'
     
-    Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
+    # Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     
-    """
-    #import pytest
+    # """
+
+    
+
     #sys.exit(pytest.main(["."]))
