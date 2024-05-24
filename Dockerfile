@@ -10,7 +10,7 @@
 
  COPY . /app
 
- ENV FLASK_APP ./app/441_filme.py
+ ENV FLASK_APP ./app/441D_Ratatouille.py
 
  EXPOSE 5000
 
