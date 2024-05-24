@@ -12,7 +12,7 @@
 <p>Aplicația software dezvoltată are ca scop afișarea unor funcționalități pentru un film ales de noi. În cazul meu, am ales să prezint descrierea și câteva recenzii ale filmului <strong>Central Intelligence</strong>. Navigarea prin aceste funcționalități se va face prin apăsarea unor butoane specifice, prezente în aplicația web.</p>
 
 <h3>Pagina Principală a Aplicației Web</h3>
-    <img src="https://imgur.com/TSrkYfu" alt="Pagina Principală">
+    <img src="https://i.imgur.com/TSrkYfu.png" alt="Pagina Principală">
 
 <h3>Pagina unde este prezentată Descrierea</h3>
 <div class="screenshot">
