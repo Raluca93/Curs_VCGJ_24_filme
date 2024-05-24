@@ -10,15 +10,15 @@ def index():
 
 @app.route('/godzilla', methods=['GET'])
 def godzilla():
-    return render_template('godzilla.html')
+    return render_template('/Gabriel/godzilla.html')
 
 @app.route('/description')
 def description():
-    return render_template('description.html')
+    return render_template('/Gabriel/description.html')
 
 @app.route('/trailer')
 def trailer():
-    return render_template('trailer.html')
+    return render_template('/Gabriel/trailer.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
