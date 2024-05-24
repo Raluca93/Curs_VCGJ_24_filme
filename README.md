@@ -2,27 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Proiect Filme - Iancu Costin 441D</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .screenshot {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .description {
-            margin-top: 0;
-            color: #666;
-        }
-    </style>
 </head>
 <body>
 
@@ -33,9 +12,7 @@
 <p>Aplicația software dezvoltată are ca scop afișarea unor funcționalități pentru un film ales de noi. În cazul meu, am ales să prezint descrierea și câteva recenzii ale filmului <strong>Central Intelligence</strong>. Navigarea prin aceste funcționalități se va face prin apăsarea unor butoane specifice, prezente în aplicația web.</p>
 
 <h3>Pagina Principală a Aplicației Web</h3>
-<div class="screenshot">
     <img src="https://imgur.com/TSrkYfu" alt="Pagina Principală">
-</div>
 
 <h3>Pagina unde este prezentată Descrierea</h3>
 <div class="screenshot">
