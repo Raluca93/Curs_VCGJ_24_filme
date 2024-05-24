@@ -16,12 +16,12 @@
 
 <h3>Pagina unde este prezentată Descrierea</h3>
 <div class="screenshot">
-    <img src="https://imgur.com/RCqqZk7" alt="Descrierea filmului">
+    <img src="https://i.imgur.com/RCqqZk7.png" alt="Descrierea filmului">
 </div>
 
 <h3>Pagina unde sunt prezentate Recenziile</h3>
 <div class="screenshot">
-    <img src="https://imgur.com/0rJ8B4Q" alt="Recenziile filmului">
+    <img src="https://i.imgur.com/0rJ8B4Q.png" alt="Recenziile filmului">
 </div>
 
 <h2>2. Stadiul Implementării Actuale</h2>
@@ -35,41 +35,41 @@
 <h3>Testarea Local</h3>
 <p>Pentru a verifica funcționalitatea, putem alege să testăm local, din terminal prin folosirea următoarelor comenzi:</p>
 <div class="screenshot">
-    <img src="https://imgur.com/bY3c2E0" alt="Testare locală 1">
+    <img src="https://i.imgur.com/bY3c2E0.png" alt="Testare locală 1">
 </div>
 <div class="screenshot">
-    <img src="https://imgur.com/2FjXfxa" alt="Testare locală 2">
+    <img src="https://i.imgur.com/2FjXfxa.png" alt="Testare locală 2">
 </div>
 
 <h3>Jenkins</h3>
 <p>Pentru a putea face testele cu Jenkins vom avea nevoie de o configurație Jenkins, iar serviciul va trebui să fie pornit (comanda <code>jenkins</code> în terminal).</p>
 
 <div class="screenshot">
-    <img src="https://imgur.com/NlcxcHE" alt="Configurare Jenkins">
+    <img src="https://i.imgur.com/NlcxcHE.png" alt="Configurare Jenkins">
 </div>
 
 <p>După ce fișierul Jenkins este configurat, iar codul este funcțional și testele sunt <em>passed</em> la pasul anterior, trebuie să încărcăm proiectul pe Git pentru a putea seta pipeline-ul și a rula testele din Jenkins.</p>
 
 <h3>Configurare Pipeline în Jenkins</h3>
 <div class="screenshot">
-    <img src="https://imgur.com/CruVsFK" alt="Configurare Pipeline">
+    <img src="https://i.imgur.com/CruVsFK.png" alt="Configurare Pipeline">
 </div>
 
 <p>După ce Pipeline-ul este configurat, se va apăsa pe butonul <em>Build Now</em> și se așteaptă terminarea testelor apoi se verifică dacă acestea sunt <em>passed</em>.</p>
 
 <div class="screenshot">
-    <img src="https://imgur.com/HIKhmOa" alt="Build Now">
+    <img src="https://i.imgur.com/HIKhmOa.png" alt="Build Now">
 </div>
 <div class="screenshot">
-    <img src="https://imgur.com/UiYl6sk" alt="Test Passed">
+    <img src="https://i.imgur.com/UiYl6sk.png" alt="Test Passed">
 </div>
 <div class="screenshot">
-    <img src="https://imgur.com/l7kXzlH" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/l7kXzlH.png" alt="Finalizare Teste">
 </div>
 <h2>4.Integrarea</h2>
 <h3>Pentru a incarca proiectul pe github, in unul din branch-urile de utilizator, vor fi folosite urmatoarele comenzi</h3>
 <div class="screenshot">
-    <img src="https://imgur.com/FfB02ch" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/FfB02ch.png" alt="Finalizare Teste">
 </div>
 <h3>Apoi vom intra pe git si vom face un pull request nou, pentru a trece de pe devel pe main. Pull request-ul a fost facut astfel incat sa fie nevoie de aprobarea unui reviewer, in cazul meu, Loliciu Andrei.</h3>
 <h2>5.Containerizarea</h2>
@@ -79,20 +79,20 @@ Pentru containerizare se va folosi un Dockerfile. Se vor da urmatoarele comenzi 
 <h3>docker image ls //afisare imagini prezente pe masina</h3>
 <h3>docker ps // afiseaza containerele care ruleaza</h3>
 <div class="screenshot">
-    <img src="https://imgur.com/CiMd7Ck" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/CiMd7Ck.png" alt="Finalizare Teste">
 </div>
 <div class="screenshot">
-    <img src="https://imgur.com/ZVokln8" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/ZVokln8.png" alt="Finalizare Teste">
 </div>
 <div class="screenshot">
-    <img src="https://imgur.com/599SSQd" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/599SSQd.png" alt="Finalizare Teste">
 </div>
 <h2>Fisier DockerFile</h2>
 <div class="screenshot">
-    <img src="https://imgur.com/QLnLSxY" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/QLnLSxY.png" alt="Finalizare Teste">
 </div>
 <h2></h2>
 <h2>Aplicatia functioneaza din container</h2>
 <div class="screenshot">
-    <img src="https://imgur.com/L1jVhkf" alt="Finalizare Teste">
+    <img src="https://i.imgur.com/L1jVhkf.png" alt="Finalizare Teste">
 </div>
