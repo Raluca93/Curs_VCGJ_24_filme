@@ -53,7 +53,7 @@ def descriere_film():
             <a href="/recenzii/central_intelligence">Recenzii</a>
         </nav>
         <div class="container">
-            <img src="/static/poza1.jpg" alt="Imagine film">
+            <img src="https://paulstriptothemovies.com/wp-content/uploads/2016/06/CentralIntelligence.jpg">
             <p>"Central Intelligence" este un film de acțiune-comedie din 2016, regizat de Rawson Marshall Thurber. Filmul îi are în rolurile principale pe Dwayne "The Rock" Johnson și Kevin Hart, demonstrând chimia și sincronizarea lor comică.</p>
             <p>Povestea îl urmărește pe Calvin Joyner (Kevin Hart), un contabil cu o viață liniștită, care a fost cândva cel mai popular tip din liceu. Viața lui ia o întorsătură neașteptată când se reconectează cu Bob Stone (Dwayne Johnson), un fost coleg de clasă care era supraponderal și batjocorit atunci, dar care s-a transformat de atunci într-un agent CIA musculos și extrem de capabil.</p>
             <p>Bob, care încă are nesiguranțe din trecutul său, solicită ajutorul lui Calvin pentru a dejuca un complot criminal implicând un caz de spionaj periculos. Pe măsură ce Calvin este atras mai adânc în lumea plină de pericole a lui Bob, duo-ul improbabil trebuie să navigheze prin împușcături, urmăriri de mașini și operațiuni sub acoperire, totul în timp ce se confruntă cu ciocnirea comică a personalităților lor contrastante.</p>
