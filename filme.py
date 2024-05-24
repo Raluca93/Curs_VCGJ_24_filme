@@ -18,15 +18,15 @@ def index():
 
 @app.route("/mazerunner", methods=['GET'])
 def maze_runner():
-    return render_template('mazerunner.html')
+    return render_template('/Octavian/mazerunner.html')
 
 @app.route("/mazerunner/trailer", methods=['GET'])
 def maze_runner_trailer():
-    return render_template('mazerunner-trailer.html')
+    return render_template('/Octavian/mazerunner-trailer.html')
 
 @app.route("/mazerunner/description", methods=['GET'])
 def maze_runner_description():
-    return render_template('mazerunner-description.html')
+    return render_template('/Octavian/mazerunner-description.html')
 	
 @app.cli.command()
 def test():
