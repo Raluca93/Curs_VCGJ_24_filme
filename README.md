@@ -18,6 +18,7 @@
 <div class="screenshot">
     <img src="https://i.postimg.cc/Vk05zP8Z/image.png" alt="Descrierea filmului">
 </div>
+<p>Continuarea descrierii</p>
 <div class="screenshot">
     <img src="https://i.postimg.cc/bvNysXcj/image.png" alt="Descrierea filmului cont">
 </div>
