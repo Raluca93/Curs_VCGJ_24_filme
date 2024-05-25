@@ -1,4 +1,4 @@
-# filme
+# Filmul Barbie
 # Cuprins
 1. [Descriere aplicatie](#descriere_aplicatie)
 2. [Configurare](#configurare)
