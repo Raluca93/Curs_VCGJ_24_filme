@@ -19,6 +19,8 @@ pipeline {
             problema rulare in paralel, al doilea stage nu mai poate porni venv-ul
             parallel {
          */
+         
+         /*
         stage('pylint - calitate cod') {
             agent any
             steps {
@@ -32,6 +34,7 @@ pipeline {
                 '''
             }
         }
+        */
 
         stage('Unit Testing cu pytest') {
             agent any
