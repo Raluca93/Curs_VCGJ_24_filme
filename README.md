@@ -7,11 +7,11 @@
 5. [Jenkins Pipeline](#jenkins)
 
 
-> ## Descriere aplicatie
+> # Descriere aplicatie
 O pagină web care prezintă filmul Iron Man.
 
 
-> ## Configurare
+> # Configurare
 Configurare .venv si instalare pachete
 
 In directorul curent rulati comenzile:
@@ -20,7 +20,7 @@ In directorul curent rulati comenzile:
 ![Configurare](images/activate_venv.png)
 
 
-> ## Pagina web
+> # Pagina web
 
 ![Pagina Web](images/index.png)
 ![Pagina Web](images/iron_man.png)
@@ -28,7 +28,7 @@ In directorul curent rulati comenzile:
 ![Pagina Web](images/distributie.png)
 
 
-> ## Utilizare Docker
+> # Utilizare Docker
 > Creare imagine
 > 
 > `sudo docker build -t filme:v02 .`
@@ -44,6 +44,7 @@ In directorul curent rulati comenzile:
 >
 ![Utilizare Docker](images/docker_container.png)
 
-> ## Jenkins Pipeline
+> # Jenkins Pipeline
 
 ![Jenkins Pipeline](images/jenkins.png)
+
