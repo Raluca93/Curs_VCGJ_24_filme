@@ -11,19 +11,19 @@ from lib import biblioteca_filme as filme
 def test_recenzii_film():
     recenzii = filme.recenzii_film()
 
-    if "«Central Intelligence» este un amestec reușit de amuzament și adrenalină" in recenzii:
-        logger.info(f"Functia recenzii_film() functioneaza corect:\n{recenzii}")
+    if "bearfaceproductions" in recenzii:
+        logger.info(f"Functia recenzii_film() functioneaza corect:\n")
         assert True
     else:
-        logger.error(f"Functia recenzii_film() NU functioneaza corect:\n{recenzii}")
+        logger.error(f"Functia recenzii_film() NU functioneaza corect:\n")
         assert False
 
 def test_descriere_film():
     descriere = filme.descriere_film()
 
-    if "Povestea îl urmărește pe Calvin Joyner (Kevin Hart)" in descriere:
-        logger.info(f"Functia descriere_film() functioneaza corect:\n{descriere}")
+    if "Edd" in descriere:
+        logger.info(f"Functia descriere_film() functioneaza corect:\n")
         assert True
     else:
-        logger.error(f"Functia descriere_film() NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia descriere_film() NU functioneaza corect:\n")
         assert False
