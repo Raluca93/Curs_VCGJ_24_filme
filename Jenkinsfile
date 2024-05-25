@@ -40,8 +40,7 @@ pipeline {
                 echo 'Unit testing with Pytest...'
                 sh '''
                     . .venv/bin/activate  
-                    flask --app filme test;
-                    
+                    pytest --maxfail=1
                 '''
             }
         }

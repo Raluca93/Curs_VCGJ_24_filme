@@ -11,6 +11,7 @@ RUN adduser -D filme
 
 USER filme
 
+
 WORKDIR /home/filme/
 
 COPY app app
@@ -24,6 +25,7 @@ USER root
 RUN chmod -R 777 static
 
 RUN python3 -m venv .venv
+RUN chmod -R g+x .venv
 RUN .venv/bin/pip install -r quickrequirements.txt
 
 #WORKDIR /home/sysinfo/app
