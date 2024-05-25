@@ -12,9 +12,9 @@ pipeline {
     		
                 echo 'Building...'
                 sh '''
-                    pip install flask;
-                    pip install pytest;
-                    pip install pylint;
+                    pipx install flask;
+                    pipx install pytest;
+                    pipx install pylint;
                     '''
             
     	}
