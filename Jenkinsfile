@@ -2,10 +2,6 @@
 pipeline {
     agent any
 
-    triggers {
-    githubPush()
-    }
-
     stages {
         stage('Build') {
             agent any
@@ -27,6 +23,8 @@ pipeline {
             agent any
             steps {
                 sh '''
+                    . .venv/bin/activate
+
                     echo '\n\nVerificare tests/*.py cu pylint';
                     pylint --exit-zero tests/*.py;
 
