@@ -56,5 +56,19 @@ pipeline {
                 '''
             }
         }
+
+        stage('Push to Docker Hub') {
+            steps {
+                script {
+                        withCredentials([string(credentialsId: 'dockerhubpwd-id', variable: 'dockerhubpwd')]) {
+                        sh '''
+                            docker login -u octaviant16 -p ${dockerhubpwd}
+                            docker tag movieimage:v${BUILD_NUMBER} octaviant16/movieimage:v${BUILD_NUMBER}
+                            docker push octaviant16/movieimage:v${BUILD_NUMBER}
+                        '''
+                    }
+                }
+            }
+        }
     }
 }
