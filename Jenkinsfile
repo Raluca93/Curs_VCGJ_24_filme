@@ -28,6 +28,9 @@ pipeline {
                     . ./activeaza_venv;
                     echo '\n\nVerificare lib/biblioteca_filme.py cu pylint\n';
                     pylint --exit-zero lib/biblioteca_filme.py;
+                    
+                    echo '\n\nVerificare tests/test_filme.py cu pylint';
+                    pylint --exit-zero tests/test_filme.py;
 
                     echo '\n\nVerificare filme.py cu pylint';
                     pylint --exit-zero filme.py;
