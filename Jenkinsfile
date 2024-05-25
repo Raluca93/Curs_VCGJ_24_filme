@@ -1,6 +1,6 @@
 /*Jenkins*/
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Build') {
@@ -10,7 +10,8 @@ pipeline {
                 sh '''
                     pwd;
                     ls -l;
-                    . ./activeaza_venv_jenkins
+                    cd $WORKSPACE
+                    . ./activeaza_venv_jenkins 
                     '''
             }
         }
