@@ -17,7 +17,9 @@
 <h3>Descrierea filmului</h3>
 <div class="screenshot">
     <img src="https://i.postimg.cc/Vk05zP8Z/image.png" alt="Descrierea filmului">
-    <img src="https://i.postimg.cc/bvNysXcj/image.png" alt="Descrierea filmului">
+</div>
+<div class="screenshot">
+    <img src="https://i.postimg.cc/bvNysXcj/image.png" alt="Descrierea filmului cont">
 </div>
 
 <h3>Recenziile filmului</h3>
@@ -25,9 +27,12 @@
     <img src="https://i.postimg.cc/htMJC1Kc/image.png" alt="Recenziile filmului">
 </div>
 
-<h2>2. Cod adaugat in git</h2>
-
-<p>Codul a fost adaugat pe branchul de dezvoltare devel/Loliciu Andrei si integrat pe main-LoliciuAndrei printr-un Pull Request cu minim 1 Reviewer</p>
+<h2>2.Integrare pe GitHub</h2>
+<h3>Pentru a incarca proiectul pe github, in branch-ul personal vom utilzia urmatoarele comenzi</h3>
+<div class="screenshot">
+    <img src="https://i.postimg.cc/bNTJKD6g/image.png" alt="Exemplu git add, commit si push">
+</div>
+<h3>In continuare, avand versiunea finala a proiectului pregatita, din GitHub vom face un pull-request pentru main, avand ca reviewer pe Iancu Costin.</h3>
 
 <h2>3. Testare</h2>
 
@@ -57,13 +62,7 @@
     <img src="https://i.postimg.cc/PJvqZCXs/image.png" alt="Test Passed">
 </div>
 
-<h2>4.Integrare pe GitHub</h2>
-<h3>Pentru a incarca proiectul pe github, in branch-ul personal vom utilzia urmatoarele comenzi</h3>
-<div class="screenshot">
-    <img src="https://i.postimg.cc/bNTJKD6g/image.png" alt="Exemplu git add, commit si push">
-</div>
-<h3>In continuare, avand versiunea finala a proiectului pregatita, din GitHub vom face un pull-request pentru main, avand ca reviewer pe Iancu Costin.</h3>
-<h2>5.Containerizarea</h2>
+<h2>4.Containerizarea</h2>
 Pentru containerizare se va folosi un Dockerfile. Se vor da urmatoarele comenzi in terminal :
 <h3>docker build -t curs_vcgj_24_filme:v05 . //creare imagine</h3>
 <h3>docker run -p 5000:5000 curs_vcgj_24_filme:v05 // pornire container</h3>
