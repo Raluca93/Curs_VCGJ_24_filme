@@ -16,37 +16,52 @@ def index():
     <html>
     <head>
         <title>Filme</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <style>
             body {
-                font-family: Arial, sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4;
+                background-color: #f8f9fa;
             }
             header {
-                background-color: #333;
+                background-color: #007bff;
                 color: #fff;
-                padding: 10px 0;
+                padding: 20px 0;
                 text-align: center;
             }
             h1 {
                 margin: 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
             }
             nav {
-                margin: 20px;
+                margin: 30px;
                 text-align: center;
             }
             nav a {
-                margin: 0 10px;
+                margin: 0 15px;
                 text-decoration: none;
-                color: #333;
+                color: #007bff;
+                font-weight: 700;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #0056b3;
             }
             .container {
-                padding: 20px;
+                padding: 30px;
                 background-color: #fff;
-                margin: 20px auto;
+                margin: 30px auto;
                 width: 80%;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                animation: fade-in 1s;
+            }
+            @keyframes fade-in {
+                from { opacity: 0; }
+                to { opacity: 1; }
             }
         </style>
     </head>
