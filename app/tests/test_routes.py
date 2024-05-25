@@ -18,5 +18,7 @@ def test_incarcare_trailer(client):
     response = client.get("/mazerunner/trailer")
     # Verificare cod de stare
     assert response.status_code == 200
+    print("Status 200 OK, conform asteptarilor.")
     # Verificare link clip video 
     assert b'src="https://www.youtube.com/embed/64-iSYVmMVY?si=Fe-B7y-cTZPSqbTx"' in response.data, f"Videoclipul nu a fost incarcat corect"
+    print("Link-ul video este corect si incarcat cu succes.")
