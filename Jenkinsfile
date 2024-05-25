@@ -11,7 +11,9 @@ pipeline {
                     pwd;
                     ls -l;
                     python3 -m venv .venv
-                    . .venv/bin/activate   
+                    echo "Activating virtual environment"
+                    . .venv/bin/activate
+                    echo "Installing the dependencies"
                     pip install -r quickrequirements.txt
                     '''
             }
