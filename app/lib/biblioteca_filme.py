@@ -8,10 +8,10 @@ def descriere_film():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4;
+                background-color: #b5cef5;
             }
             header {
-                background-color: #333;
+                background-color: #5f99f5;
                 color: #fff;
                 padding: 10px 0;
                 text-align: center;
@@ -30,7 +30,7 @@ def descriere_film():
             }
             .container {
                 padding: 20px;
-                background-color: #fff;
+                background-color: #a1beed;
                 margin: 20px auto;
                 width: 80%;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -53,7 +53,7 @@ def descriere_film():
             <a href="/recenzii/Ratatouille">Recenzii</a>
         </nav>
         <div class="container">
-            <img src="/static/poza1.jpg" alt="Imagine film">
+            <img src="https://images7.alphacoders.com/112/1120946.jpg" alt="Imagine film">
             <p>"Ratatouille" este un film de animație produs de Pixar Animation Studios și lansat de Walt Disney Pictures în 2007. Regizat de Brad Bird, filmul spune povestea unui șobolan pe nume Remy, care visează să devină un mare bucătar, în ciuda condiției sale de rozător și a dezaprobării familiei sale.</p>
             <p>Acțiunea se desfășoară la Paris, unde Remy își găsește drumul către bucătăria unui restaurant de renume, fondat de faimosul bucătar Auguste Gusteau. Acolo, Remy face echipă cu un tânăr și stângaci angajat, Alfredo Linguini. Remy controlează mișcările lui Linguini ascunzându-se sub boneta acestuia și trăgându-l de păr, transformându-l într-un bucătar desăvârșit. Împreună, ei creează feluri de mâncare uimitoare care atrag atenția criticilor culinari, inclusiv a temutului critic Anton Ego.</p>
             <p>"Ratatouille" este un omagiu adus pasiunii pentru gătit și ideii că talentul poate veni de oriunde. Filmul a fost apreciat pentru povestea sa captivantă, animația de înaltă calitate și mesajele sale inspiraționale. A câștigat Premiul Oscar pentru cel mai bun film de animație și a fost nominalizat la alte patru categorii.</p>
@@ -73,10 +73,10 @@ def recenzii_film():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4;
+                background-color: #b5cef5;
             }
             header {
-                background-color: #333;
+                background-color: #5f99f5;
                 color: #fff;
                 padding: 10px 0;
                 text-align: center;
@@ -95,7 +95,7 @@ def recenzii_film():
             }
             .container {
                 padding: 20px;
-                background-color: #fff;
+                background-color: #a1beed;
                 margin: 20px auto;
                 width: 80%;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

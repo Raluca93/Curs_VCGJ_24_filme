@@ -22,10 +22,10 @@ def index():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4;
+                background-color: #b5cef5;
             }
             header {
-                background-color: #333;
+                background-color: #5f99f5;
                 color: #fff;
                 padding: 10px 0;
                 text-align: center;
@@ -44,7 +44,7 @@ def index():
             }
             .container {
                 padding: 20px;
-                background-color: #fff;
+                background-color: #a1beed;
                 margin: 20px auto;
                 width: 80%;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
