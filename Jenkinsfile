@@ -12,9 +12,9 @@ pipeline {
     		
                 echo 'Building...'
                 sh '''
-                    pip install flask --break-system-packages;
-                    pip install pytest--break-system-packages;
-                    pip install pylint --break-system-packages;
+                    pip install flask;
+                    pip install pytest;
+                    pip install pylint;
                     '''
             
     	}
