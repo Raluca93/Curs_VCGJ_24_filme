@@ -16,7 +16,7 @@ def client():
         yield client
 
 def test_incarcare_trailer(client):
-    response = client.get("/mazerunner/trailer")
+    response = client.get("/mazerunner/trailer/ERROR")
     # Verificare cod de stare
     if (response.status_code == 200):
         logging.info(f"Status 200 OK, conform asteptarilor.")
