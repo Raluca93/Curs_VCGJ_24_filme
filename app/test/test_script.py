@@ -4,8 +4,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-sys.path.append("../")
-sys.path.insert(1, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
+#sys.path.append("../")
+#sys.path.insert(1, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
 import app.lib.biblioteca_filme as filme
 
 
