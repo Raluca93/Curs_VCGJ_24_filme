@@ -60,9 +60,9 @@
 <h2>4.Integrare pe GitHub</h2>
 <h3>Pentru a incarca proiectul pe github, in branch-ul personal vom utilzia urmatoarele comenzi</h3>
 <div class="screenshot">
-    <img src="https://i.imgur.com/FfB02ch.png" alt="Finalizare Teste">
+    <img src="https://i.postimg.cc/bNTJKD6g/image.png" alt="Exemplu git add, commit si push">
 </div>
-<h3>Apoi vom intra pe git si vom face un pull request nou, pentru a trece de pe devel pe main. Pull request-ul a fost facut astfel incat sa fie nevoie de aprobarea unui reviewer, in cazul meu, Loliciu Andrei.</h3>
+<h3>In continuare, avand versiunea finala a proiectului pregatita, din GitHub vom face un pull-request pentru main, avand ca reviewer pe Iancu Costin.</h3>
 <h2>5.Containerizarea</h2>
 Pentru containerizare se va folosi un Dockerfile. Se vor da urmatoarele comenzi in terminal :
 <h3>docker build -t curs_vcgj_24_filme:v05 . //creare imagine</h3>
