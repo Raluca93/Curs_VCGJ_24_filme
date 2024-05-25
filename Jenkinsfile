@@ -10,14 +10,8 @@ pipeline {
                 sh '''
                     pwd;
                     ls -l;
-<<<<<<< HEAD
                     cd $WORKSPACE
                     . ./activeaza_venv_jenkins 
-=======
-                    python3 -m venv .venv
-                    . .venv/bin/activate   
-                    pip install -r quickrequirements.txt
->>>>>>> 0aba606cd027de11ad0e39976bc8197c9d4b1ea9
                     '''
             }
         }
