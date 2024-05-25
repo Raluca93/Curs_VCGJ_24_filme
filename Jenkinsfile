@@ -1,5 +1,6 @@
+/*Jenkins*/
 pipeline {
-    agent none
+    agent any
 
     stages {
         stage('Build') {
@@ -23,8 +24,8 @@ pipeline {
             steps {
                 sh '''
                     . ./activeaza_venv;
-                    echo '\n\nVerificare lib/*.py cu pylint\n';
-                    pylint --exit-zero lib/*.py;
+                    echo '\n\nVerificare lib/biblioteca_filme.py cu pylint\n';
+                    pylint --exit-zero lib/biblioteca_filme.py;
 
                     echo '\n\nVerificare filme.py cu pylint';
                     pylint --exit-zero filme.py;
@@ -32,12 +33,27 @@ pipeline {
             }
         }
 
-        /*    }
-        }*/
+        stage('Unit Testing cu pytest') {
+            agent any
+            steps {
+                echo 'Unit testing with Pytest...'
+                sh '''
+                    . ./activeaza_venv;
+                    flask --app filme test;
+                    
+                '''
+            }
+        }
+        
         stage('Deploy') {
             agent any
             steps {
-                echo 'IN lucru ! ...'
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t filme:v${BUILD_NUMBER} .
+                    docker create --name filme${BUILD_NUMBER} -p 8020:5011 filme:v${BUILD_NUMBER}
+                '''
             }
         }
     }
