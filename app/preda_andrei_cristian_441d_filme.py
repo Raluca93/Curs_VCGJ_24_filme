@@ -21,10 +21,10 @@ def index():
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
-                background-color: #052108;
+                background-color: #52e7f2;
             }
             header {
-                background-color: #0a6b14;
+                background-color: #89e9f0;
                 color: #fff;
                 padding: 10px 0;
                 text-align: center;
@@ -43,7 +43,7 @@ def index():
             }
             .container {
                 padding: 20px;
-                background-color: #fff;
+                background-color: #abd1ed;
                 margin: 20px auto;
                 width: 80%;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@ def index():
             <a href="/recenzii/Ed_Edd_n_Eddys_Big_Picture_Show">Recenzii</a>
         </nav>
         <div class="container">
-        Pagina Principala a Aplicatiei Web.
+        Pagina dedicata filmului "Ed, Edd, n Eddy's Big Picture Show".
         </div>
     </body>
     </html>
