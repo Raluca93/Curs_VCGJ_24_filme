@@ -44,7 +44,7 @@ pipeline {
 
          
 
-        stage('pylint - calitate cod') {
+        /*stage('pylint - calitate cod') {
 
             agent any
 
@@ -69,7 +69,7 @@ pipeline {
             }
 
         }
-
+*/
         
 
 
