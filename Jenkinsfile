@@ -1,6 +1,10 @@
 /*Jenkins*/
 pipeline {
-    agent none
+    agent any
+
+    triggers {
+    githubPush()
+    }
 
     stages {
         stage('Build') {
@@ -23,10 +27,6 @@ pipeline {
             agent any
             steps {
                 sh '''
-                    . .venv/bin/activate  
-                    echo '\n\nVerificare lib/*.py cu pylint\n';
-                    pylint --exit-zero lib/*.py;
-
                     echo '\n\nVerificare tests/*.py cu pylint';
                     pylint --exit-zero tests/*.py;
 
@@ -47,5 +47,16 @@ pipeline {
             }
         }
         
+        stage('Deploy Docker Container') {
+            agent any
+            steps {
+                echo "Build ID: ${BUILD_NUMBER}"
+                echo "Creare imagine docker"
+                sh '''
+                    docker build -t movieimage:v${BUILD_NUMBER} .
+                    docker create --name moviecontainer${BUILD_NUMBER} -p 8020:5011 movieimage:v${BUILD_NUMBER}
+                '''
+            }
+        }
     }
 }
