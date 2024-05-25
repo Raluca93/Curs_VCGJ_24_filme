@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 #sys.path.append("../")
 sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
 
-import bibliotecafilme as filme 
+import biblioteca_filme as filme 
 
 
 def test_recenzii_film():
