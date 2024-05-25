@@ -15,6 +15,7 @@ pipeline {
                     pip install flask;
                     pip install pytest;
                     pip install pylint;
+                    pip list
                     '''
             
     	}
