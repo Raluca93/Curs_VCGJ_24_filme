@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index The Hobbit</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Define root variables */
+        :root {
+            --jumbotron-padding-y: 3rem;
+        }
+        
+        /* Style for jumbotron */
+        .jumbotron {
+            padding-top: var(--jumbotron-padding-y);
+            padding-bottom: var(--jumbotron-padding-y);
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+
+        /* Responsive jumbotron padding */
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: calc(var(--jumbotron-padding-y) * 2);
+                padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+            }
+        }
+
+        /* Last paragraph in jumbotron */
+        .jumbotron p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Jumbotron heading style */
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+
+        /* Container style within jumbotron */
+        .jumbotron .container {
+            max-width: 40rem;
+        }
+
+        /* Footer style */
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        /* Footer paragraph style */
+        footer p {
+            margin-bottom: .25rem;
+        }
+
+        /* Box shadow class */
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+    </style>
+</head>
+<body class="text-center">
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index_TheHobbit">The Hobbit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/cast_TheHobbit">Cast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/description_TheHobbit">Description</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    <!-- Main content -->
+    <main role="main">
+        <!-- Jumbotron section -->
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">The Cast</h1>
+                <p class="lead text-muted">The films feature an ensemble cast that includes James Nesbitt, Ken Stott, Evangeline Lilly, Lee Pace and Luke Evans, with several actors reprising their roles from The Lord of the Rings.</p>
+                <h1 class="jumbotron-heading">{{releaseyear}}</h1>
+            </div>
+        </section>
+
+        <!-- Album section -->
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Ian McKellen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar card structure for each card -->
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Martin Freeman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Richard Armitage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Ken Stott</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Aidan Turner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="static/images/poza_TheHobbit_cast6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Dean O'Gorman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <!-- Additional footer content can be added here -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
