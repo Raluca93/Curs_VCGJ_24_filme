@@ -46,5 +46,5 @@ def test():
     
     """
     import pytest
-    sys.exit(pytest.main(["."]))
+    sys.exit(pytest.main(["app/tests"]))
     

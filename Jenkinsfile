@@ -36,7 +36,7 @@ pipeline {
         }
         
 
-	/*
+	
         stage('Unit Testing cu pytest') {
             agent any
             steps {
@@ -48,7 +48,7 @@ pipeline {
                 '''
             }
         }
-        */
+      
         
         stage('Deploy') {
             agent any
