@@ -5,6 +5,8 @@ from flask import render_template
 import app.lib.description as dscr
 import app.lib.rating as rate
 import app.tests.test_Lotr as tst
+import app.lib.description_MonstersINC as dscr_INC
+import app.lib.rating_MonstersINC as rate_INC
 import pytest
 
 #from app.lib import network
@@ -34,7 +36,22 @@ def cast():
 def description():
     return render_template("description_Lotr.html")
 
-    
+@app.route("/index_MonstersINC")
+def index_MonstersINC():
+    return render_template("index_MonstersINC.html")
+
+@app.route("/index_PlotMonstersINC")
+def index_PlotMonstersINC():
+    description = dscr_INC.returneaza_descriere()
+    rating = rate_INC.returneaza_rating()
+    return render_template("index_PlotMonstersINC.html",description = description , rating = rating )
+
+@app.route("/index_CastMonstersINC")
+def index_CastMonstersINC():
+    return render_template("index_CastMonstersINC.html")
+
+
+
 @app.cli.command()
 def test():
     """

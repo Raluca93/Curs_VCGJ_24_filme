@@ -1,0 +1,6 @@
+import subprocess
+
+def returneaza_descriere():
+    descriere = [ "In the city of Monstropolis, powered by the screams of human children, Monsters, Inc. is the largest scare factory. James P. 'Sulley' Sullivan and his best friend Mike Wazowski are the top scare team at the factory. The monsters believe children are toxic and can harm them if they come into contact with their world."
+    , "One night, a child named Boo accidentally enters the monster world. Sulley and Mike frantically try to hide her and return her to her own world. However, they discover a devious plot by their colleague Randall Boggs to kidnap children and forcibly extract their screams using a torture machine." , "Sulley and Mike decide to protect Boo and expose Randall's plan. With the help of the company's CEO, Henry J. Waternoose III, they succeed in thwarting Randall. However, it is revealed that Waternoose is also involved in the plot to save the company from an energy crisis." , " Eventually, Sulley and Mike manage to save Boo and return her to the human world. They also discover that children's laughter is much more potent than screams, revolutionizing the energy industry in Monstropolis. Sulley becomes the new CEO of Monsters, Inc., leading the company into a new, laughter-filled era. " ]
+    return descriere
