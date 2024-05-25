@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-sys.path.append("../")
+sys.path.append("/home/cristi/Desktop/Curs_VCGJ_24_filme/app")
 
 from lib import biblioteca_filme as filme
 
