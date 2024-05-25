@@ -20,7 +20,7 @@
 </div>
 <p>Continuarea descrierii</p>
 <div class="screenshot">
-    <img src="https://i.postimg.cc/bvNysXcj/image.png" alt="Descrierea filmului cont">
+    <img src="https://i.postimg.cc/yYjRFYZJ/image.png" alt="Descrierea filmului cont">
 </div>
 
 <h3>Recenziile filmului</h3>
