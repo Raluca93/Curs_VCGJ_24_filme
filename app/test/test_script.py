@@ -4,9 +4,11 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-sys.path.append("/home/cristi/Desktop/Curs_VCGJ_24_filme/app")
+#sys.path.append("../")
+sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
 
-from lib import biblioteca_filme as filme
+import bibliotecafilme as filme 
+
 
 def test_recenzii_film():
     recenzii = filme.recenzii_film()
