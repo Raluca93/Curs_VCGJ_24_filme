@@ -20,7 +20,7 @@ pipeline {
             parallel {
          */
          
-         /*
+         
         stage('pylint - calitate cod') {
             agent any
             steps {
@@ -34,8 +34,9 @@ pipeline {
                 '''
             }
         }
-        */
+        
 
+	/*
         stage('Unit Testing cu pytest') {
             agent any
             steps {
@@ -47,6 +48,7 @@ pipeline {
                 '''
             }
         }
+        */
         
         stage('Deploy') {
             agent any
