@@ -10,7 +10,9 @@ pipeline {
                 sh '''
                     pwd;
                     ls -l;
-                    . ./activeaza_venv_jenkins
+                    python3 -m venv .venv
+                    . .venv/bin/activate   
+                    pip install -r quickrequirements.txt
                     '''
             }
         }
