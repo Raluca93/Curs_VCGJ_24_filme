@@ -9,6 +9,7 @@ pipeline {
                 echo 'Building...'
                 sh '''
                     pwd;
+                    echo $VIRTUAL_ENV
                     ls -l;
                     . ./activeaza_venv_jenkins
                     '''
