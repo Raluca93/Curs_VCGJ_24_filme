@@ -5,9 +5,8 @@ logger = logging.getLogger(__name__)
 
 
 sys.path.append("../")
-#sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
-
-from lib import biblioteca_filme as filme 
+sys.path.insert(1, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
+import app.lib.biblioteca_filme as filme
 
 
 def test_recenzii_film():

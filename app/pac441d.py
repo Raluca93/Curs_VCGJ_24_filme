@@ -1,10 +1,10 @@
 import sys
 import flask
 
-from lib import biblioteca_filme
-#sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
+# from lib import biblioteca_filme
+sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
 
-#import biblioteca_filme
+import app.lib.biblioteca_filme as filme
 
 print('filme')
 
@@ -72,12 +72,12 @@ def index():
 
 @app.route("/descriere/Ed_Edd_n_Eddys_Big_Picture_Show", methods=['GET'])
 def get_descriere():
-    descriere=biblioteca_filme.descriere_film()
+    descriere=filme.descriere_film()
     return descriere
 
 @app.route("/recenzii/Ed_Edd_n_Eddys_Big_Picture_Show", methods=['GET'])
 def get_recenzii():
-    recenzii=biblioteca_filme.recenzii_film()
+    recenzii=filme.recenzii_film()
     return recenzii
 
 @app.cli.command()
