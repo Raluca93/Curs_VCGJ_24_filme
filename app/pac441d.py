@@ -1,10 +1,10 @@
 import sys
 import flask
 
-#from lib import biblioteca_filme
-sys.path.insert(1, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
+from lib import biblioteca_filme
+#sys.path.insert(0, '/home/cristi/Desktop/Curs_VCGJ_24_filme/app/lib')
 
-import biblioteca_filme
+#import biblioteca_filme
 
 print('filme')
 
