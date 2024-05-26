@@ -15,7 +15,7 @@
     
     ![Structura aplicatie](readme_images/Interstellar-Home.png)
 
-  * Pagina Cast - o serie de portrete ale principalilor actori si, mai jos, o lista detaliata a rolurilor jucate in film
+  * Pagina Cast - o serie de portrete ale principalilor actori si, mai jos, o lista detaliata a rolurilor jucate in film.
 
     ![Structura aplicatie](readme_images/Interstellar-Cast.png)
 
