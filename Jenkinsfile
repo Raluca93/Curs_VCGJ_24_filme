@@ -5,36 +5,36 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh '''
-                    pwd;
-                    ls -l;
-                    . ./activeaza_venv_jenkins
-                    '''
+                    echo 'Building...'
+                    sh '''
+                        pwd;
+                        ls -l;
+                        . ./activeaza_venv_jenkins
+                        '''
             }
         }
         
         stage('pylint - calitate cod') {
             steps {
-                sh '''
-                    . ./activeaza_venv
+                    sh '''
+                        . ./activeaza_venv
+                        echo '\n\nVerificare tests/*.py cu pylint';
+                        pylint --exit-zero tests/*.py;
 
-                    echo '\n\nVerificare tests/*.py cu pylint';
-                    pylint --exit-zero tests/*.py;
-
-                    echo '\n\nVerificare filme.py cu pylint';
-                    pylint --exit-zero filme.py;
-                '''
+                        echo '\n\nVerificare filme.py cu pylint';
+                        pylint --exit-zero filme.py;
+                    '''
+                
             }
         }
 
         stage('Unit Testing cu pytest') {
             steps {
-                echo 'Unit testing with Pytest...'
-                sh '''
-                    . ./activeaza_venv
-                    pytest --maxfail=1
-                '''
+                    echo 'Unit testing with Pytest...'
+                    sh '''
+                        . ./activeaza_venv
+                        pytest --maxfail=1
+                    '''
             }
         }
         

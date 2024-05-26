@@ -1,12 +1,7 @@
 import sys
 from flask import Flask, url_for, render_template
 
-#from app.lib import network
-#from app.lib import linux
-#from app.grafice.exemplu_func_grad_2 import valori_x, valori_y, genereaza_grafice
-
 print('filme')
-
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -28,15 +23,3 @@ def maze_runner_trailer():
 @app.route("/mazerunner/description", methods=['GET'])
 def maze_runner_description():
     return render_template('/Octavian/mazerunner-description.html')
-
-# def test():
-    # """
-    # Rulare 'unit tests'
-    
-    # Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
-    
-    # """
-
-    
-
-    #sys.exit(pytest.main(["."]))
