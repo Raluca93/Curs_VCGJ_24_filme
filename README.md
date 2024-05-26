@@ -8,7 +8,7 @@
 
 
 > # Descriere aplicatie
-  Tema proiectului propune realizarea unei aplicatii web care sa prezinte informatii specifice legate de un film la alegere. Filmul ales de mine este Interstellar, structura aplicatiei web fiind descrisa mai jos:
+  Tema proiectului propune realizarea unei aplicatii web care sa prezinte informatii specifice legate de un film la alegere. Filmul ales de mine este Interstellar, structura aplicatiei web fiind descrisa mai jos
 
 > # Structura aplicatie
   Aplicatia web este alcatuita din 3 pagini, fiecare oferind informatii specifice despre filmul ales.
