@@ -8,7 +8,7 @@
 
 
 > ## Descriere aplicatie
-O pagină web care prezintă filmul Iron Man.
+O pagină web care prezintă filmul Barbie.
 
 
 > ## Configurare
