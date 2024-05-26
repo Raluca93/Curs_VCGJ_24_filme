@@ -7,7 +7,7 @@ print('filme')
 
 __filme__ = "filme_app"
 app = flask.Flask(__filme__)
-
+#
 # Parametrii globali pentru descriere si recenzii
 
 @app.route("/", methods=['GET'])
