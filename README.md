@@ -54,13 +54,13 @@ In directorul 'app' rulati comenzile:
 # EXEMPLE pagina web 
 ## Pagina principala
 [cuprins](#exemple-pagina-web)
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/main.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/main.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/home.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/home.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/cast.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/cast.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/plot.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/plot.png)
 
 
 
