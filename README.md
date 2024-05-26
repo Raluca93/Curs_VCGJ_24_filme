@@ -11,7 +11,7 @@
 
 > # Structura aplicatie
   Aplicatia web este alcatuita din 3 pagini, fiecare oferind informatii specifice despre filmul ales.
-  * Pagina Home - o scurta descriere a filmului, alaturi de poster si o trecere in revista a principalelor nominalizari si premii obtinute
+  * Pagina Home - o scurta descriere a filmului, alaturi de poster si o lista sumara a principalelor nominalizari si premii obtinute
     
     ![Structura aplicatie](readme_images/Interstellar-Home.png)
 
