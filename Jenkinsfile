@@ -21,8 +21,8 @@ pipeline {
                         echo '\n\nVerificare tests/*.py cu pylint';
                         pylint --exit-zero tests/*.py;
 
-                        echo '\n\nVerificare filme.py cu pylint';
-                        pylint --exit-zero filme.py;
+                        echo '\n\nVerificare main.py cu pylint';
+                        pylint --exit-zero main.py;
                     '''
                 
             }
