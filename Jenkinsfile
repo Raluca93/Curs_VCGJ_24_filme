@@ -4,26 +4,20 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent any
             steps {
                 echo 'Building...'
                 sh '''
                     pwd;
                     ls -l;
-                    python3 -m venv .venv
-                    echo "Activating virtual environment"
-                    . .venv/bin/activate
-                    echo "Installing the dependencies"
-                    pip install -r quickrequirements.txt
+                    . ./activeaza_venv_jenkins
                     '''
             }
         }
         
         stage('pylint - calitate cod') {
-            agent any
             steps {
                 sh '''
-                    . .venv/bin/activate
+                    . ./activeaza_venv
 
                     echo '\n\nVerificare tests/*.py cu pylint';
                     pylint --exit-zero tests/*.py;
@@ -35,18 +29,16 @@ pipeline {
         }
 
         stage('Unit Testing cu pytest') {
-            agent any
             steps {
                 echo 'Unit testing with Pytest...'
                 sh '''
-                    . .venv/bin/activate  
+                    . ./activeaza_venv
                     pytest --maxfail=1
                 '''
             }
         }
         
         stage('Deploy Docker Container') {
-            agent any
             steps {
                 echo "Build ID: ${BUILD_NUMBER}"
                 echo "Creare imagine docker"
