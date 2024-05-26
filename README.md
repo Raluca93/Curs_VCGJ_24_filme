@@ -63,6 +63,8 @@ In directorul 'app' rulati comenzile:
 # EXEMPLE pagina web 
 ## Pagina principala
 [cuprins](#exemple-pagina-web)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-rusude/static/main-page-Dune.png)
+
 ![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-rusude/static/Description-Dune.png)
 
 ![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-rusude/static/Cast-Dune.png)
