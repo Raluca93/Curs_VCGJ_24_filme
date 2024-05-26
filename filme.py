@@ -79,6 +79,6 @@ def test():
 
 if __name__ == '__main__':
    app.run(debug=True)
-    sys.exit(pytest.main(["app/tests"]))
+   sys.exit(pytest.main(["app/tests"]))
     
 
