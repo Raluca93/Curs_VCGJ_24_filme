@@ -1,59 +1,58 @@
 pipeline {
-    agent any
-    
+    agent none
+
     stages {
         stage('Build') {
+            agent any
             steps {
-            	echo 'Building...'
+                echo 'Building...'
                 sh '''
+                    cd app;
                     pwd;
                     ls -l;
-                    python3 -m venv .venv
-                    . .venv/bin/activate
-                    pip install flask
-                    pip install pylint
-                    pip install pytest
-                '''
+                    . ./activeaza_venv_jenkins
+                    '''
             }
         }
         
+        /*stage('Testare') {
+            problema rulare in paralel, al doilea stage nu mai poate porni venv-ul
+            parallel {
+         */
         stage('pylint - calitate cod') {
+            agent any
             steps {
-            	echo 'Pylint...'
                 sh '''
-                    . .venv/bin/activate
-                    if [ $? -eq 0 ]
-		    then
-    		    	echo "SUCCESS: venv was activated."
-		    else
-    		    	echo "FAIL: cannot activate venv"
-    		    	python3 -m venv .venv
-                        . .venv/bin/activate
-		    fi
-		    
-                    pylint --exit-zero lib/*.py
-                    pylint --exit-zero tests/*.py
-                    pylint --exit-zero sysinfo.py
+                    cd app;
+                    . ./activeaza_venv;
+                    echo '\n\nVerificare lib/*.py cu pylint\n';
+                    pylint --exit-zero lib/*.py;
+                    echo '\n\nVerificare tests/*.py cu pylint';
+                    pylint --exit-zero tests/*.py;
+                    echo '\n\nVerificare filme.py cu pylint';
+                    pylint --exit-zero filme.py;
                 '''
             }
         }
-        
-        stage('Unit Testing') {
+
+        stage('Unit Testing cu pytest') {
+            agent any
             steps {
-            	echo 'Unit testing with Pytest...'
+                echo 'Unit testing with Pytest...'
                 sh '''
-                    . .venv/bin/activate
-                    pytest
+                    cd app;
+                    . ./activeaza_venv;
+                    python3 -m pytest -v;
                 '''
             }
         }
-        
-        
+        /*    }
+        }*/
         stage('Deploy') {
+            agent any
             steps {
-                echo 'Deploying...'
+                echo 'IN lucru ! ...'
             }
         }
     }
 }
-
