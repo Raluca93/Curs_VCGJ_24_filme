@@ -28,15 +28,15 @@ pipeline {
             }
         }
 
-        // stage('Unit Testing cu pytest') {
-        //     steps {
-        //             echo 'Unit testing with Pytest...'
-        //             sh '''
-        //                 . ./activeaza_venv
-        //                 pytest --maxfail=1
-        //             '''
-        //     }
-        // }
+        stage('Unit Testing cu pytest') {
+            steps {
+                    echo 'Unit testing with Pytest...'
+                    sh '''
+                        . ./activeaza_venv
+                        pytest --maxfail=1
+                    '''
+            }
+        }
         
         // stage('Deploy Docker Container') {
         //     steps {

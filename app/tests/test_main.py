@@ -23,7 +23,7 @@ def test_title(client):
     # Check that the status code is 200
     ans_data = biblioteca.titlu_film(client)
     # Check that the response contains some expected content from the CSS file
-    expected_content = b"<h1>Godzilla</h1>"
+    expected_content = b"<h1>Gorilla</h1>"
     if(expected_content in ans_data):
         logger.info("Pagine WEB conține titlul așteptat")
         assert True
