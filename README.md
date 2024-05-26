@@ -1,7 +1,7 @@
 # Curs_VCGJ_24_filme
 
 
-`filme`
+`FILME`
 ===================================
 
 # Cuprins
@@ -54,13 +54,13 @@ In directorul 'app' rulati comenzile:
 # EXEMPLE pagina web 
 ## Pagina principala
 [cuprins](#exemple-pagina-web)
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/Screenshot from 2024-05-26 22-42-15.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/main.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/Screenshot from 2024-05-26 22-42-21.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/home.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/Screenshot from 2024-05-26 22-42-28.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/cast.png)
 
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/Screenshot from 2024-05-26 22-42-34.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/static/plot.png)
 
 
 
