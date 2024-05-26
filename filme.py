@@ -1,17 +1,43 @@
 import sys
 from flask import Flask, url_for
+from flask import render_template
+import app.lib.description as dscr
+import app.lib.rating as rate
+import app.tests.test_Lotr as tst
+import pytest
+
+#from app.lib import network
+#from app.lib import linux
+#from app.grafice.exemplu_func_grad_2 import valori_x, valori_y, genereaza_grafice
+
+print(tst.test_rating())
+
 from app.lib import biblioteca_filme
 
 actiune_iron_man = biblioteca_filme.actiune_iron_man()
 distributie_iron_man = biblioteca_filme.distributie_iron_man()
 
+
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def index():
-    ret = f"<h1><a href={url_for('iron_man')}>Ionescu Raluca 441D - Iron Man</a></h1>"
-    return ret
-    
+    return render_template("index.html")
+
+@app.route("/index_Lotr")
+def home():
+    description = dscr.returneaza_descriere()
+    rating = rate.returneaza_rating()
+    return render_template("index_Lotr.html", description = description, rating = rating)
+
+
+@app.route("/cast_Lotr")
+def cast():
+    return render_template("cast_Lotr.html")
+
+@app.route("/description_Lotr")
+def description():
+    return render_template("description_Lotr.html")
 
 @app.route("/iron_man", methods=['GET'])
 def iron_man():
@@ -45,6 +71,14 @@ def test():
     Apelare pytest din aplicatia systest, cu ajutorul comenzii flask.
     
     """
-    import pytest
+
+    errno = pytest.main(["-x", "app/tests"])
+    sys.exit(errno)
+    #sys.exit(pytest.main(["."]))
+
+
+if __name__ == '__main__':
+   app.run(debug=True)
     sys.exit(pytest.main(["app/tests"]))
     
+

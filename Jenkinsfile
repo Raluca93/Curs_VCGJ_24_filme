@@ -1,9 +1,14 @@
-/*Jenkins*/
+
 pipeline {
     agent any
-
+    
+    environment {
+        FLASK_APP = 'filme.py' 
+    }
+    
     stages {
-        stage('Build') {
+        
+       stage('Build') {
             agent any
             steps {
                 echo 'Building...'
@@ -14,55 +19,22 @@ pipeline {
                     '''
             }
         }
-        
-        /*stage('Testare') {
-            problema rulare in paralel, al doilea stage nu mai poate porni venv-ul
-            parallel {
-         */
-         
-         
-        stage('pylint - calitate cod') {
-            agent any
-            steps {
-                sh '''
-                    . ./activeaza_venv;
-                    echo '\n\nVerificare lib/biblioteca_filme.py cu pylint\n';
-                    pylint --exit-zero lib/biblioteca_filme.py;
-                    
-                    echo '\n\nVerificare tests/test_filme.py cu pylint';
-                    pylint --exit-zero tests/test_filme.py;
 
-                    echo '\n\nVerificare filme.py cu pylint';
-                    pylint --exit-zero filme.py;
-                '''
-            }
-        }
-        
-
-	
-        stage('Unit Testing cu pytest') {
-            agent any
+        stage('Run tests') {
             steps {
-                echo 'Unit testing with Pytest...'
-                sh '''
-                    . ./activeaza_venv;
-                    flask --app filme test;
+             script{   
+                    def testResult = sh(script: 'flask test', returnStatus: true)
                     
-                '''
+                    
+                    if (testResult == 0) {
+                        echo "Tests were successful!"
+                    } else {
+                        echo "Tests failed!"
+                        error "There are test failures."
+                    }
             }
-        }
-      
-        
-        stage('Deploy') {
-            agent any
-            steps {
-                echo "Build ID: ${BUILD_NUMBER}"
-                echo "Creare imagine docker"
-                sh '''
-                    docker build -t filme:v${BUILD_NUMBER} .
-                    docker create --name filme${BUILD_NUMBER} -p 8020:5011 filme:v${BUILD_NUMBER}
-                '''
+                }
             }
         }
     }
-}
+
