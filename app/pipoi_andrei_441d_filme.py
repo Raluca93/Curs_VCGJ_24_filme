@@ -75,7 +75,7 @@ def index():
             <a href="/recenzii/inception">Recenzii</a>
         </nav>
         <div class="container">
-        Pagina Principala a Aplicatiei Web Filme1.
+        Pagina Principala a Aplicatiei Web Filme.
         </div>
     </body>
     </html>
