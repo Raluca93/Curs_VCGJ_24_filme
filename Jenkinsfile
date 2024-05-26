@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     
@@ -7,7 +8,17 @@ pipeline {
     
     stages {
         
-    
+       stage('Build') {
+            agent any
+            steps {
+                echo 'Building...'
+                sh '''
+                    pwd;
+                    ls -l;
+                    . ./activeaza_venv_jenkins
+                    '''
+            }
+        }
 
         stage('Run tests') {
             steps {
@@ -26,5 +37,4 @@ pipeline {
             }
         }
     }
-
 

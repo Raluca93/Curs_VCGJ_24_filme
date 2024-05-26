@@ -5,12 +5,6 @@ echo "Activating virtual environment"
 . .venv/bin/activate
 echo "Installing the dependencies"
 
-# pachete instalate individual:
-#pip install flask
-#pip install flask-bootstrap
-#pip install pytest
-#pip install pylint
-
 # sau prin intermediul fisierului de requirements
 pip install -r quickrequirements.txt
 
@@ -37,4 +31,5 @@ pip install -r quickrequirements.txt
 #  pip freeze
 # si analiza ouput in comparatie cu quickrequirements.txt
 # pentru a se vedea pachetele extra.
-# 
+
+
