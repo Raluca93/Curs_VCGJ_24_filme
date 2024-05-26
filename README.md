@@ -33,13 +33,13 @@
 > 
 >  `sudo docker push alexslavoiu/proiectscc:v01`
 
-    ![Docker](readme_images/Docker.png)  
+  ![Image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-alexslavoiu/readme_images/Docker.png)  
 
   In aceasta poza arat faptul ca am avut succes in realizarea unui container in Docker.
 
 > # Jenkins
   In aceasta etapa, testele au fost realizate utilizand serverul de automatizare _Jenkins_. Mai jos sunt atasate cateva capturi de ecran ce surprind rezultatele obtinute in urma procesului de testare.
-
+  
   ![Jenkins](readme_images/Jenkins_Dev.png)
   ![Jenkins](readme_images/Jenkins_Main.png)
   
