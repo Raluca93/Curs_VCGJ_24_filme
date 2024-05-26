@@ -1,3 +1,4 @@
+
 # Curs_VCGJ_24_filme-Badea-Mitrut-441D
 # Cuprins
 1. [Descriere aplicatie](#descriere-aplicatie)
@@ -43,6 +44,7 @@
   ![Jenkins](readme_images/test_jenkins_dev.png)
   ![Jenkins](readme_images/test_jenkins_main.png)
   
+
   
 
 
