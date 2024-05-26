@@ -4,7 +4,7 @@ logger = logging.getLogger(__name__)
 
 import sys
 sys.path.append("/home/ion/proiect/Curs_VCGJ_24_filme/app")
-from app.lib import lib_filme as filme
+from lib import lib_filme as filme
 
 
 
