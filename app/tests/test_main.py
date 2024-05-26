@@ -1,7 +1,7 @@
-import pytest
 import logging
 import sys
 import os
+import pytest
 
 from lib import biblioteca_filme as biblioteca
 from main import app
@@ -18,7 +18,6 @@ def client():
         yield client
 logger = logging.getLogger(__name__)
 def test_title(client):
-    
     logger.info("Trimitere cerere GET către /godzilla")
     # Send a GET request to the specified static file
     # Check that the status code is 200
