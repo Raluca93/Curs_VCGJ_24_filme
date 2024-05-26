@@ -16,7 +16,7 @@
    
 
 
-# Descriere aplicatie (Dune)
+# Descriere aplicatie (MONSTERS, INC.)
 
 Aplicația Filme este o platformă pentru prezentarea diverselor filme alese individual de fiecare student. Funcționează exclusiv pe Linux și a fost testată pe Ubuntu 22.04. Componenta web a aplicației utilizează framework-ul `Flask`. Aplicația este simplă, afișând template-uri HTML printr-un model MVC (filme.py). Anumite elemente, precum descrierea filmului, rating-ul sau distribuția, sunt generate de funcții `.py` dedicate, aflate în folderul `app/lib`.
 
@@ -70,8 +70,8 @@ In directorul 'app' rulati comenzile:
 
 O parte din functiile din biblioteca de functii a aplicatie:
 - directorul lib, fisierele:
-  - descriere_Dune.py
-  - rating_Dune.py
+  - description_MonstersINCpy
+  - rating_MonstersINC.py
 au teste de tip 'unit - test' asociate - adica - este apelata functia si se asteapta o anumita valoare.
 Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si returneaza PASS daca valoarea primita de la functie este cea asteptata si FAIL in caz contrar.
 
@@ -110,4 +110,4 @@ Executia testelor se face cu oricare din comenzile de mai jos, apelate din direc
 - CI = Continuous Integration
 
 ## Exemplu executie pipeline Jenkins
-![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-rusude/static/Jenkins-Dune.png)
+![image](https://github.com/Raluca93/Curs_VCGJ_24_filme/blob/dev-Victor/static/jenkins.png)
