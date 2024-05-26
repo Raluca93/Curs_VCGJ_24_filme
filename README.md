@@ -33,7 +33,7 @@
 
 <p>Procesul de testare poate fi realizat atât în mod manual, prin executarea fișierului <code>test_script.py</code> în cadrul mașinii virtuale locale, cât și automat, prin intermediul platformei Jenkins. În cazul utilizării Jenkins, testele se vor derula în mod automat, fără a necesita configurări suplimentare de fiecare dată când se dorește efectuarea unui nou test.</p>
 
-<h3>Testarea Locala</h3>
+<h3>Testarea Locală</h3>
 <p>În scopul verificării funcționalității, avem opțiunea de a efectua testarea în mediul local, utilizând terminalul și executând următoarele comenzi:</p>
 <div class="screenshot">
     <img src="https://i.imgur.com/dw4ExPi.png" alt="Testare locală 1">
