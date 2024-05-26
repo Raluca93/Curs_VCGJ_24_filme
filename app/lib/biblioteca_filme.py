@@ -17,13 +17,12 @@ def client():
 logger = logging.getLogger(__name__)
 logging.info(app.instance_path)
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-
-logging.info(app.instance_path)
-
 def titlu_film(client):
     response = client.get("/godzilla")
+    return response.data
+
+def titlu_descriere(client):
+    response = client.get("/description")
     return response.data
 
 
