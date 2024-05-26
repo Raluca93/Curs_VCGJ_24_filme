@@ -27,7 +27,7 @@
 
 <h2>2. Stadiul Implementării</h2>
 
-<p>Versiunea finală și funcțională a codului a fost încărcată pe platforma Git. Această variantă operațională poate fi accesată prin intermediul următorului link:<a href="https://github.com/Raluca93/Curs_VCGJ_24_filme">https://github.com/Raluca93/Curs_VCGJ_24_filme</a></p>
+<p>Versiunea finală și funcțională a codului a fost încărcată pe platforma Git. Această variantă operațională poate fi accesată prin intermediul următorului link :<a href="https://github.com/Raluca93/Curs_VCGJ_24_filme">https://github.com/Raluca93/Curs_VCGJ_24_filme</a></p>
 
 <h2>3. Testare</h2>
 
