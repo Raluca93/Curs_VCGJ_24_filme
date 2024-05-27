@@ -44,7 +44,7 @@ pipeline {
                 echo "Creare imagine docker"
                 sh '''
                     docker build -t imaginefilm:v${BUILD_NUMBER} .
-                    docker create --name moviecontainer${BUILD_NUMBER} -p 8020:5011 imaginefilm:v${BUILD_NUMBER}
+                    docker run --name moviecontainer${BUILD_NUMBER} -p 8020:5011 imaginefilm:v${BUILD_NUMBER}
                 '''
             }
         }
