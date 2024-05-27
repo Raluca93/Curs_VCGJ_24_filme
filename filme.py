@@ -17,8 +17,10 @@ from app.lib import biblioteca_filme
 actiune_iron_man = biblioteca_filme.actiune_iron_man()
 distributie_iron_man = biblioteca_filme.distributie_iron_man()
 
-
 app = Flask(__name__)
+
+app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['TESTING'] = True
 
 @app.route("/", methods=['GET'])
 def index():
@@ -61,7 +63,18 @@ def actiune():
   ret += f"<h2><a href={url_for('distributie')}>Distrinutie</a></h2>"
   ret += actiune_iron_man
   return ret
-  
+
+@app.route("/mazerunner", methods=['GET'])
+def maze_runner():
+    return render_template('/Octavian/mazerunner.html')
+
+@app.route("/mazerunner/trailer", methods=['GET'])
+def maze_runner_trailer():
+    return render_template('/Octavian/mazerunner-trailer.html')
+
+@app.route("/mazerunner/description", methods=['GET'])
+def maze_runner_description():
+    return render_template('/Octavian/mazerunner-description.html')
   
 @app.cli.command()
 def test():
@@ -76,9 +89,6 @@ def test():
     sys.exit(errno)
     #sys.exit(pytest.main(["."]))
 
-
 if __name__ == '__main__':
    app.run(debug=True)
    sys.exit(pytest.main(["app/tests"]))
-    
-

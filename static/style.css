@@ -1,0 +1,101 @@
+body {
+    background-image: url('../static/images/maze-background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #000000a9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1, p {
+    text-align: left;
+    margin: 0;
+}
+
+#description p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.div-poster
+{
+margin: 0px;
+padding: 5px;
+display: flex;
+}
+
+.div-poster img{
+    width: 50%;
+    height: auto;
+    display: block;
+    box-shadow: 20px 30px 10px rgba(0, 0, 0, .6);
+}
+.poster {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.div-buttons
+{
+margin: 0px;
+height: 100px;
+width: 40%;
+left: 50%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+}
+
+button
+{
+background-color: #434141;
+min-width: 10vw;
+font-family: Arial, sans-serif;
+color:#ffffff;
+height: 8vh;
+border: 0;
+font-size: 3vh;
+border-radius: 6px;
+}
+
+.div-back
+{
+    margin: 0;
+    position: absolute;
+}
+
+button .back
+{
+    
+    margin: 0;
+    top:0;
+    left: 0;
+}
+
+button:hover
+{
+    background-color: #6c6969;
+}
