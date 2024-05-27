@@ -19,6 +19,8 @@ In directorul curent rulati comenzile:
 ![Pagina Web](images/distributie.png)
 
 
+
+
 > # Utilizare Docker
 > Creare imagine
 > 
