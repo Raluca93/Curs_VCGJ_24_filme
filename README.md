@@ -1,14 +1,5 @@
-# filme
-# Cuprins
-1. [Descriere aplicatie](#descriere_aplicatie)
-2. [Configurare](#configurare)
-3. [Pagina web](#pagina_web)
-4. [Utilizare Docker](#docker)
-5. [Jenkins Pipeline](#jenkins)
-
-
 > # Descriere aplicatie
-O pagină web care prezintă filmul Iron Man.
+O pagină web care prezintă filmul Forrest Gump.
 
 
 > # Configurare
@@ -23,7 +14,7 @@ In directorul curent rulati comenzile:
 > # Pagina web
 
 ![Pagina Web](images/index.png)
-![Pagina Web](images/iron_man.png)
+![Pagina Web](images/fg.png)
 ![Pagina Web](images/actiune.png)
 ![Pagina Web](images/distributie.png)
 

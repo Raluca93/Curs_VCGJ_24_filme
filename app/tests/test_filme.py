@@ -5,20 +5,20 @@ import lib.biblioteca_filme as bf
 
 def test_actiune():
 
-    actiune = bf.actiune_iron_man()
+    actiune = bf.actiune_fg()
     if actiune:
-        logger.info(f"Actiunea filmului este: {actiune}")
+        logger.info(f"Actiunea filmului: {actiune}")
         assert True
     else:
-        logger.error(f"Nu exista nicio descriere pentru acest film...")
+        logger.error(f"Nu exista paragraf despre actiune!")
         assert False
 
 def test_distributie():
-    distributie = bf.distributie_iron_man()
+    distributie = bf.distributie_fg()
 
     if distributie:
-        logger.info(f"Distributia filmului: \n{distributie}")
+        logger.info(f"Distribuția filmului: \n{distributie}")
         assert True
     else:
-        logger.error(f"Nu exista informatii legate de distributie...")
+        logger.error(f"Nu exista paragraf legat de distributie!")
         assert False 
