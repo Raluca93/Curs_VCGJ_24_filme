@@ -1,3 +1,8 @@
+'''
+		Rujoiu Alexandru Valentin
+'''
+
+
 from flask import Flask , url_for
 from lib import lib_filme as filme
 
