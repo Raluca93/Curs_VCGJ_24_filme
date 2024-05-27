@@ -35,7 +35,7 @@ In directorul curent rulati comenzile:
 >
 ![Utilizare Docker](images/docker_container.png)
 
-> # Jenkins Pipeline
+> # Jenkins Pipeline 
 
 ![Jenkins Pipeline](images/jenkins.png)
 
