@@ -22,8 +22,8 @@ def test_quotes():
     quotes = filme.quotes()
 
     if "we must never lose it" in quotes:
-        logger.info(f"Functia quotes functioneaza corect:\n{descriere}")
+        logger.info(f"Functia quotes functioneaza corect:\n{quotes}")
         assert True
     else:
-        logger.error(f"Functia quotes NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia quotes NU functioneaza corect:\n{quotes}")
         assert False 
