@@ -18,7 +18,11 @@ pipeline {
             steps {
                     sh '''
                         . ./activeaza_venv
-                        echo '\n\nVerificare tests/*.py cu pylint';
+
+                        echo '\n\nVerificare app/lib/*.py cu pylint\n';
+                        pylint --exit-zero app/lib/*.py;
+
+                        echo '\n\nVerificare app/tests/*.py cu pylint';
                         pylint --exit-zero app/tests/*.py;
 
                         echo '\n\nVerificare filme.py cu pylint';

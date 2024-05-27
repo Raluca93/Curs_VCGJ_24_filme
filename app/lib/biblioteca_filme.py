@@ -1,7 +1,7 @@
-import pytest
 import logging
 import sys
 import os
+import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
@@ -19,11 +19,6 @@ def client():
 
 logger = logging.getLogger(__name__)
 logging.info(app.instance_path)
-
-
-
-logging.info(app.instance_path)
-
 def trailer_status(client):
     response = client.get("/mazerunner/trailer")
     return response.status_code
