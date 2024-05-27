@@ -18,9 +18,9 @@ Aplicatia include suport pentru containerizare in fisierul Dockerfile din direct
 
 Din punct de vedere al testarii, este inculs unit testing cu pytest, pentru o parte din functiile din biblioteca aplicatiei, aflate in directorul `app/lib`.
 
-Structura aplicatiei cuprinde fisierul principal filme.py care foloseste biblioteca creata de noi lib_filme‎.py in care sunt continute functiile :
-- descriere_film()
-- quotes()
+Structura aplicatiei cuprinde fisierul principal filme.py care foloseste biblioteca creata de noi `lib_filme‎.py` in care sunt continute functiile :
+- `descriere_film()`
+- `quotes()`
 
 
 
@@ -35,7 +35,7 @@ Directorul `lib`, fisierul:
 
 Are teste de tip 'unit - test' asociate - adica - este apelata functia si se asteapta o anumita valoare. Testul compara valoarea obtinuta la apelul functie cu valoarea asteptata si returneaza PASS daca valoarea primita de la functie este cea asteptata si FAIL in caz contrar.
 
-Pentru testare s-a folosit pachetul `pytest` din Python. Acesta se afla in lista de pachete care trebuie instalate, in fisierul `quickrequirements.txt`.
+Pentru testare s-a folosit pachetul `pytest` din Python.
 
 ## Verificare statica - pylint
 
