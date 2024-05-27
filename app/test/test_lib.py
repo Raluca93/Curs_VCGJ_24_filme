@@ -21,9 +21,9 @@ def test_descriere_film():
 def test_quotes():
     quotes = filme.quotes()
 
-    if "scientifically known as Euterpe oleracea" in descriere:
-        logger.info(f"Functia descriere_acai functioneaza corect:\n{descriere}")
+    if "we must never lose it" in quotes:
+        logger.info(f"Functia quotes functioneaza corect:\n{descriere}")
         assert True
     else:
-        logger.error(f"Functia descriere_acai NU functioneaza corect:\n{descriere}")
+        logger.error(f"Functia quotes NU functioneaza corect:\n{descriere}")
         assert False 
