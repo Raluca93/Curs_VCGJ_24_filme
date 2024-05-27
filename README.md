@@ -1,4 +1,3 @@
-[DOBRE OCTAVIAN - Curs_VCGJ_24_filme](/../main/README.md)
 
 # Curs_VCGJ_24_filme
 
