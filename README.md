@@ -32,7 +32,7 @@ Ambele pipeline-uri clonează codul, creează mediul de lucru virtual (venv), î
 
 
 # Configurare
-[cuprins](#configurare)
+(#configurare)
 
 Configurare .venv si instalare pachete
 
