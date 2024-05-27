@@ -7,6 +7,8 @@ ENV FLASK_APP filme
 #RUN useradd -rm -d /home/site -s /bin/bash -g root -G sudo -u 1001 site
 
 #3.8 alpine
+
+
 RUN adduser -D filme
 
 USER filme
@@ -26,8 +28,11 @@ COPY static static
 RUN python3 -m venv .venv
 RUN .venv/bin/pip install -r quickrequirements.txt
 
+
 #WORKDIR /home/sysinfo/app
 
 # runtime configuration
 EXPOSE 5000
+=======
+EXPOSE 5011
 ENTRYPOINT ["./dockerstart.sh"]
