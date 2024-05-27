@@ -2,7 +2,7 @@
 
 =========================
 
-# Cuprins
+# Cuprins 27.05.2023
 
 1.[Descrierea Aplicatiei](#descriere-aplicatie)
 2.[Configurare](#configurare)
