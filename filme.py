@@ -1,68 +1,50 @@
 import sys
 from flask import Flask, url_for
 from flask import render_template
-import app.lib.description as dscr
-import app.lib.rating as rate
-import app.tests.test_Lotr as tst
+
 import pytest
 
-#from app.lib import network
-#from app.lib import linux
-#from app.grafice.exemplu_func_grad_2 import valori_x, valori_y, genereaza_grafice
 
-print(tst.test_rating())
+from app.lib import movie
 
-from app.lib import biblioteca_filme
+actiune_the_martian = movie.actiune_the_martian()
+distributie_the_martian = movie.distributie_the_martian() 
+  
 
-actiune_iron_man = biblioteca_filme.actiune_iron_man()
-distributie_iron_man = biblioteca_filme.distributie_iron_man()
 
 
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def index():
-    return render_template("index.html")
 
-@app.route("/index_Lotr")
-def home():
-    description = dscr.returneaza_descriere()
-    rating = rate.returneaza_rating()
-    return render_template("index_Lotr.html", description = description, rating = rating)
+    ret = f"<h1><a href={url_for('the_martian')}>The Martian</a></h1>"
+    return ret
 
 
-@app.route("/cast_Lotr")
-def cast():
-    return render_template("cast_Lotr.html")
-
-@app.route("/description_Lotr")
-def description():
-    return render_template("description_Lotr.html")
-
-@app.route("/iron_man", methods=['GET'])
-def iron_man():
-  ret = "<h1>Iron Man</h1><br>"
+@app.route("/the_martian", methods=['GET'])
+def the_martian():
+  ret = "<h1>The Martian</h1><br>"
   ret += f"<h2><a href={url_for('actiune')}>Actiune</a></h2>"  
   ret += f"<h2><a href={url_for('distributie')}>Distributie</a></h2>"
   return ret  
-	
-@app.route("/iron_man/distributie", methods=["GET"])
+
+@app.route("/the_martian/distributie", methods=["GET"])
 def distributie():
   ret = "<h1>Distributie</h1>"
-  ret += f"<h2><a href={url_for('iron_man')}>Iron Man</a></h2> "
+  ret += f"<h2><a href={url_for('the_martian')}>The Martian</a></h2> "
   ret += f"<h2><a href={url_for('actiune')}>Actiune</a></h2>"
-  ret += distributie_iron_man
+  ret += distributie_the_martian
   return ret
   
-@app.route("/iron_man/actiune", methods=["GET"])
+@app.route("/the_martian/actiune", methods=["GET"])
 def actiune():
   ret = "<h1>Actiune</h1>"
-  ret += f"<h2><a href={url_for('iron_man')}>Iron Man</a></h2>"
+  ret += f"<h2><a href={url_for('the_martian')}>The Martian</a></h2>"
   ret += f"<h2><a href={url_for('distributie')}>Distrinutie</a></h2>"
-  ret += actiune_iron_man
-  return ret
-  
-  
+  ret += actiune_the_martian
+  return ret	
+    
 @app.cli.command()
 def test():
     """

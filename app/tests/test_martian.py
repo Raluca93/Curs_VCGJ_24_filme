@@ -1,11 +1,11 @@
 import logging
 logger = logging.getLogger(__name__)
 
-import lib.biblioteca_filme as bf
+import lib.movie as bf
 
 def test_actiune():
 
-    actiune = bf.actiune_iron_man()
+    actiune = bf.actiune_the_martian()
     if actiune:
         logger.info(f"Actiunea filmului este: {actiune}")
         assert True
@@ -14,7 +14,7 @@ def test_actiune():
         assert False
 
 def test_distributie():
-    distributie = bf.distributie_iron_man()
+    distributie = bf.distributie_the_martian()
 
     if distributie:
         logger.info(f"Distributia filmului: \n{distributie}")
