@@ -13,9 +13,6 @@
 1. [Reprezentari grafice](#reprezentari-grafice)
 1. [Utilizare Docker si containerizare alicatie](https://github.com/crchende/sysinfo/blob/main/doc/dockerdoc.md)
 1. [DevOps](#devops-ci)
-   1. [Pipeline Jenkins](#exemplu-executie-pipeline-jenkins)
-   1. [Workflow GitHub Actions](#exemplu-executie-workflow-in-github-actions)
-1. [Bibliografie](#bibliografie)
 
 # Descriere aplicatie
 
@@ -174,7 +171,17 @@ Pentru testare s-a folosit pachetul pytest din python. Acesta se afla in lista d
 
 ## Exemplu executie pipeline Jenkins
 
-![image](https://github.com/crchende/sysinfo/assets/57460107/8fdaa372-44ee-409b-855c-053e78baf800)
+![pipeline-jenkins](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/4e1cc112-27be-45f5-8ef7-873fbadceec0)
+
+## Container Docker
+Containerul Docker a fost creat avand numele specificat in stage-ul din pipeline si tag-ul dat de numarul de build
+
+![container-created](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/8f34ac3a-40ae-4e6e-a5f6-de46d10a5093)
+
+## Push container pe Docker Hub
+Containerele create in urma rularii build-urilor au fost incarcate pe DockerHub
+
+![dockerhub](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/d316f0e9-5c6b-4ee7-8d22-21a1d14aad78)
 
 # Bibliografie:
 
