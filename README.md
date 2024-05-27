@@ -5,11 +5,11 @@
 </head>
 <body>
 
-<h1>Proiect Filme - Pipoi-Ionescu Andrei 441D</h1>
+<h1>Proiect Filme - Gabor Andrei 441D</h1>
 
 <h2>1. Functionalitate</h2>
 
-<p>Aplicația software dezvoltată are ca scop afișarea unor funcționalități pentru un film ales de noi. În cazul meu, am ales să prezint descrierea și câteva recenzii ale filmului <strong>Central Intelligence</strong>. Navigarea prin aceste funcționalități se va face prin apăsarea unor butoane specifice, prezente în aplicația web.</p>
+<p>Aplicația software dezvoltată are ca scop afișarea unor funcționalități pentru un film ales de noi. În cazul meu, am ales să prezint descrierea și câteva recenzii ale filmului <strong>The Lighthouse</strong>. Navigarea prin aceste funcționalități se va face prin apăsarea unor butoane specifice, prezente în aplicația web.</p>
 
 <h3>Pagina Principală a Aplicației Web Filme</h3>
     <img src="https://i.imgur.com/YzmCsb1.png" alt="Pagina Principală">
