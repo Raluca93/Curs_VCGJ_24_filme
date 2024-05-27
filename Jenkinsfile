@@ -19,7 +19,7 @@ pipeline {
                     sh '''
                         . ./activeaza_venv
                         echo '\n\nVerificare tests/*.py cu pylint';
-                        pylint --exit-zero tests/*.py;
+                        pylint --exit-zero app/tests/*.py;
 
                         echo '\n\nVerificare filme.py cu pylint';
                         pylint --exit-zero filme.py;
