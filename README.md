@@ -107,25 +107,26 @@ Press CTRL+C to quit
 filme
 ```
 
-![ruleaza_aplicatia](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/e1f5e589-9509-482b-8d16-77303d77d91b)
+![ruleaza_aplicatia](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/5d486331-32bd-462a-a00e-3b650eea1c5f)
+
 
 # EXEMPLE pagina web
 
 ## Pagina principala - ruta default
 
-![index-page](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/5f60d0f9-47ea-40b1-ab75-4594db135a17)
+![index-page](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/27e3b4a5-2d67-42e7-8cb0-48d280a7df37)
 
 ## Pagina Maze Runner
 
-![mazerunner-page](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/0c502f45-fea4-4861-b5cb-ad9e7f0c2e70)
+![mazerunner-page](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/377cb0ce-3923-468d-9ec5-16e860795223)
 
 ## Pagina Trailer
-
-![mazerunner-trailer](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/deecb2a1-dfd0-4e04-b2d4-d6ca6b9840f4)
+![mazerunner-trailer](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/adc39b5b-1ed5-49c1-97a8-d4fb6417614b)
 
 ## Pagina Descriere
 
-![mazerunner-description](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/39427e05-1aa2-4de8-8aa2-72d63020dd48)
+![mazerunner-description](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/1a75be0e-5acf-46da-987b-446688a26a2a)
+
 
 # Testare cu pytest
 
@@ -155,7 +156,8 @@ Testul `test_style_css` verifică dacă fișierul style.css se încarcă corect 
 
 Pentru testare s-a folosit pachetul pytest din python. Acesta se afla in lista de pachete care trebuie instalate, in fisierul quickrequirements.txt.
 
-![pytest-mazerunner](https://github.com/OctavianT16/Curs_VCGJ_24_filmeoctav/assets/165658515/e02f2aea-a64e-4c26-a3ac-2e02ecb94190)
+![pytest-mazerunner](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/af625984-4cd0-4f94-91b6-c5354d98e785)
+
 
 # Verificare statica cu pylint
 
