@@ -6,7 +6,7 @@ import pytest
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 from filme import app
-from lib import biblioteca_filme as biblioteca
+from app.lib import biblioteca_filme_maze as biblioteca
 
 @pytest.fixture
 def client():
