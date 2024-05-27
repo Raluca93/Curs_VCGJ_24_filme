@@ -183,6 +183,11 @@ Containerele create in urma rularii build-urilor au fost incarcate pe DockerHub
 
 ![dockerhub](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/d316f0e9-5c6b-4ee7-8d22-21a1d14aad78)
 
+# Pull Request
+Pull Request din branch-ul de dezvoltare catre branch ul protejat main
+![pullrq](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/165658515/899a9b95-71e0-493a-be4c-7d17ccd2618b)
+
+
 # Bibliografie:
 
 [cuprins](#cuprins)
