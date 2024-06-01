@@ -11,19 +11,19 @@ from lib import lib_filme as filme
 def test_descriere_film():
     descriere = filme.descriere_film()
 
-    if "icon of popular culture" in descriere:
+    if "Toei Animation" in descriere:
         logger.info(f"Functia descriere_film functioneaza corect: {descriere}")
         assert True
     else:
         logger.error(f"Functia descriere_film NU functioneaza corect: {descriere}")
         assert False
 
-def test_quotes():
-    quotes = filme.quotes()
+def test_comentari():
+    comentari = filme.comentari()
 
-    if "we must never lose it" in quotes:
-        logger.info(f"Functia quotes functioneaza corect:\n{quotes}")
+    if "Watched it today" in comentari:
+        logger.info(f"Functia quotes functioneaza corect:\n{comentari}")
         assert True
     else:
-        logger.error(f"Functia quotes NU functioneaza corect:\n{quotes}")
+        logger.error(f"Functia quotes NU functioneaza corect:\n{comentari}")
         assert False 
