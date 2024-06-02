@@ -1,8 +1,170 @@
+def descriere_film():
+    descriere = """
+    <html>
+    <head>
+        <title>Descriere</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #1c1c1c;
+                color: #f5f5f5;
+            }
+            header {
+                background-color: #8b0000;
+                padding: 20px 0;
+                text-align: center;
+            }
+            h1 {
+                margin: 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            nav {
+                margin: 30px;
+                text-align: center;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #f5f5f5;
+                font-weight: 700;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #8b0000;
+            }
+            .container {
+                padding: 30px;
+                background-color: #2d2d2d;
+                margin: 30px auto;
+                width: 80%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                text-align: center;
+                animation: slide-in 1s;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin: 30px 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+            }
+            @keyframes slide-in {
+                from { transform: translateX(-100%); }
+                to { transform: translateX(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Descriere</h1>
+        </header>
+        <nav>
+            <a href="/">Acasă</a>
+            <a href="/descriere/fight-club">Descriere</a>
+            <a href="/recenzii/fight-club">Recenzii</a>
+        </nav>
+        <div class="container">
+            <img src="https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg">
+            <p>"Fight Club" este un film dramatic și satiric din 1999, regizat de David Fincher, cu Edward Norton și Brad Pitt în rolurile principale. Filmul explorează teme precum consumismul, masculinitatea și alienarea socială.</p>
+            <p>Naratorul anonim (Edward Norton) este un funcționar corporatist plictisit și nemulțumit de viața sa. Într-o călătorie de afaceri, îl întâlnește pe Tyler Durden (Brad Pitt), un producător de săpun carismatic și nonconformist. După ce apartamentul naratorului este distrus într-o explozie misterioasă, acesta se mută cu Tyler, iar cei doi formează un "fight club" clandestin, unde bărbații se luptă pentru a scăpa de frustrările vieții moderne.</p>
+            <p>Pe măsură ce fight club-ul câștigă popularitate, Tyler începe să creeze un cult anarhist cunoscut sub numele de Project Mayhem, cu scopul de a distruge simbolurile consumismului și de a provoca haos în societate. Naratorul începe să-și pună la îndoială relația cu Tyler și propria sa identitate, descoperind un adevăr tulburător.</p>
+            <p>"Fight Club" este o critică incisivă a conformismului și a valorilor materialiste ale societății moderne, explorând impactul psihologic al alienării și al lipsei de sens. Filmul se remarcă prin regia inovatoare a lui David Fincher, performanțele puternice ale lui Edward Norton și Brad Pitt, precum și prin răsturnările de situație șocante din poveste.</p>
+            <p>Cu un amestec de umor negru, violență și comentarii sociale, "Fight Club" a devenit un film cult, stârnind controverse și discuții aprinse de la lansarea sa. Filmul rămâne o operă provocatoare și memorabilă, care continuă să captiveze și să inspire publicul.</p>
+        </div>
+    </body>
+    </html>
+    """
+    return descriere
 
-
-def distributie_iron_man():
-  return f'<h3>Robert Downey Jr. în rolul lui Tony Stark / Iron Man<br>Terrence Howard în rolul lui Lt. Colonel James "Rhodey" Rhodes<br>Jeff Bridges în rolul lui Obadiah Stane<br>Shaun Toub în rolul lui Yinsen<br>Gwyneth Paltrow în rolul lui Pepper Potts<br>Faran Tahir în rolul lui Raza<br>Paul Bettany voices J.A.R.V.I.S.<br>Leslie Bibb în rolul lui Christine Everhart<br>Peter Billingsley - William Ginter Riva</h3>'
-  
-def actiune_iron_man():
-  return f'<h3>Geniul, miliardarul și filantropul Tony Stark, care a moștenit contractorul de apărare Stark Industries de la tatăl său, se află în mijlocul războiului din Afganistan, împreună cu prietenul său și colonelul militar legionar James Rhodes, pentru a demonstra noua rachetă "Jericho". După demonstrație, convoiul este ambuscat, iar Stark este rănit critic de una dintre rachetele companiei sale, folosite de atacatori. El este capturat și întemnițat într-o peșteră de un grup terorist, intitulat Cele Zece Inele. Aici, Yinsen, un doctor care este închis împreună cu el, implantează un electromagnet în pieptul lui Stark pentru a împiedica cioburile de șrapnel care l-au rănit să ajungă la inimă și să-l omoare. Raza, liderul Celor Zece Inele, îi oferă lui Tony libertatea, în schimbul construirii unei rachete de tip "Jericho" pentru ei, dar Tony și Yinsen știu că Raza nu-și va ține cuvântul.\n\nStark și Yinsen construiesc în secret un mic generator electric puternic (numit un reactor cu arc) pentru a alimenta electromagnetul lui Stark și un prototip de armură de luptă, pe care plănuiesc să-l folosească pentru a evada. Deși păstrează costumul aproape ascuns, Cele Zece Inele descoperă intențiile ostaticilor lor și atacă atelierul. Yinsen se sacrifică să-i deturneze în timp ce costumul este finalizat. Stark, aflat în arumură, se luptă pană afară din peșteră pentru a-l găsi pe Yinsen pe moarte, apoi arde armele Celor Zece Inele în furie și zboară, dar se prăbușește în deșert și costumul este distrus.\n\nDupă ce este salvat de Rhodes, Stark se întoarce acasă și anunță că compania lui nu va mai produce arme. Obadiah Stane, vechiul partener de afaceri al tatălui său și managerul companiei, îi sfătuiește pe Stark să distrugă Stark Industries și moștenirea tatălui său. În atelierul său de acasă, Stark construiește o versiune mai elegantă, mai puternică a costumului, precum și un reactor cu arc mai puternic pentru piept. Asistenta sa personală, Pepper Potts, plasează reactorul original într-o vitrină de sticlă mică. Deși Stane cere detalii, Stark își păstrează munca secretă, deoarece are suspiciuni față de compania sa.\n\nLa un eveniment caritabil oeganizat de Stark Industries, reporterul Christine Everhart îl informează pe Stark că armele companiei sale, inclusiv Jericho, au fost livrate recent Celor Zece Inele și sunt folosite pentru a ataca satul de origine al lui Yinsen, Gulmira. Stark află apoi că Stane a traficat arme către criminali din întreaga lume și încearcă o lovitură de stat să-l înlocuiască ca CEO al Stark Industries. Stark își pune pe el noua armură și zboară în Afganistan, unde salvează sătenii.\n\nÎn timp ce zboară acasă, Stark este împușcat de două avioane de luptă F-22 Raptor. El își dezvăluie identitatea secretă lui Rhodes, pentru a pune capăt atacului. Între timp, Cele Zece Inele adună bucățile costumului prototip al lui Stark și se întâlnesc cu Stane, care îi omoară pe toți, inclusiv pe Raza. Stane își face apoi un costum masiv din rămășițele primite. Încercând să urmărească expedierile ilegale ale companiei sale, Stark o trimite pe Pepper să intre în baza sa de date. Astfel, ea descoperă că Stane a angajat Cele Zece Inele pentru a-l ucide pe Tony, dar aceștia au refuzat. Potts se întâlnește cu agentul Phil Coulson de la S.H.I.E.L.D., o agenție guvernamentală secretă de informații, pentru a-i informa despre faptele lui Stane.\n\nOamenii de știință ai lui Stane nu pot duplica reactorul de arc al lui Stark, astfel că Stane îl atacă pe Stark la casa lui și-l scoate pe cel din piept. Stark reușește să ajungă la reactorul său original pentru al înlocui. Pepper și mai mulți agenți S.H.I.E.L.D. încearcă să-l aresteze pe Stane, dar acesta își pune costumul și îi atacă.\n\nStark se luptă cu Stane, dar este depășit fără noul său reactor, neputand să-și facă costumul să funcționeze la capacitate maximă. Lupta îi duce Stark și Stane în vârful clădirii Stark Industries, iar Tony îi cere lui Pepper să supraîncarce reactorul cu arc mare care alimentează clădirea. Aceasta declanșează o creștere masivă care îi face pe Stane și costumul său să cadă în reactor, omorandu-l. A doua zi, la o conferință de presă, Stark ignoră sugestiile din partea lui S.H.I.E.L.D. și își dezvăluie public identitate de super-erou, pe care presa a numit-o "Iron Man".\n\nÎntr-o scenă după credite, directorul S.H.I.E.L.D., Nick Fury, îl vizitează pe Stark la el acasă, spunându-i că Iron Man nu este "singurul super-erou din lume" și că vrea să discute despre "Inițiativa Răzbunătorii".</h3> '
-
+def recenzii_film():
+    recenzii = """
+    <html>
+    <head>
+        <title>Recenzii</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #1c1c1c;
+                color: #f5f5f5;
+            }
+            header {
+                background-color: #8b0000;
+                padding: 20px 0;
+                text-align: center;
+            }
+            h1 {
+                margin: 0;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            nav {
+                margin: 30px;
+                text-align: center;
+            }
+            nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #f5f5f5;
+                font-weight: 700;
+                transition: color 0.3s;
+            }
+            nav a:hover {
+                color: #8b0000;
+            }
+            .container {
+                padding: 30px;
+                background-color: #2d2d2d;
+                margin: 30px auto;
+                width: 80%;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                animation: slide-in 1s;
+            }
+            @keyframes slide-in {
+                from { transform: translateX(100%); }
+                to { transform: translateX(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Recenzii</h1>
+        </header>
+        <nav>
+            <a href="/">Acasă</a>
+            <a href="/descriere/fight-club">Descriere</a>
+            <a href="/recenzii/fight-club">Recenzii</a>
+        </nav>
+        <div class="container">
+            <ol>
+                <li>
+                    <p><strong>The New York Times</strong>: "«Fight Club» este un film provocator și captivant, care explorează cu îndrăzneală teme precum masculinitatea toxică, consumismul și alienarea socială. Regia lui David Fincher este impecabilă, iar performanțele lui Edward Norton și Brad Pitt sunt remarcabile."</p>
+                </li>
+                <li>
+                    <p><strong>Rolling Stone</strong>: "Un film cult instantaneu, «Fight Club» combină umorul negru, violența și comentariul social într-un amestec exploziv. Fincher creează o lume vizual uimitoare, în timp ce scenariul inteligent abordează subiecte complexe cu o claritate brutală."</p>
+                </li>
+                <li>
+                    <p><strong>The Guardian</strong>: "«Fight Club» este o satiră îndrăzneață și provocatoare a societății moderne, care pune sub semnul întrebării noțiunile de identitate, consum și conformism. Filmul rămâne la fel de relevant și de șocant astăzi ca și la lansarea sa inițială."</p>
+                </li>
+                <li>
+                    <p><strong>Chicago Sun-Times</strong>: "Cu o distribuție puternică și o regie inventivă, «Fight Club» este un film care te face să gândești și care nu te lasă indiferent. Deși controversat, filmul reușește să abordeze teme profunde într-un mod unic și memorabil."</p>
+                </li>
+                <li>
+                    <p><strong>Entertainment Weekly</strong>: "«Fight Club» este un film îndrăzneț și iconoclast, care sfidează convențiile și așteptările. Cu un ritm alert, răsturnări de situație șocante și imagini vizuale impresionante, filmul lui Fincher lasă o impresie de durată asupra publicului."</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+    </html>
+    """
+    return recenzii
