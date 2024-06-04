@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def index():
-    ret = f"<h1><a href={url_for('matrix')}>Vasile Valentin 441D - Iron Man</a></h1>"
+    ret = f"<h1><a href={url_for('matrix')}>Vasile Valentin 441D - Matrix</a></h1>"
     return ret
     
 
