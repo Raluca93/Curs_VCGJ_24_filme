@@ -3,7 +3,7 @@ Pagina web simpla facuta cu Flask.
 
 **Functionalitate**:
 Codul a fost preluat de pe alt branch si modificat. In urma modificarilor -> pagina web Film Matrix.
-Pagina devine functionala prin intermediu fisierului ruleaza_aplicatia.
+Pagina devine functionala prin intermediul fisierului ruleaza_aplicatia.
 ![ruleaza_aplicatia](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/152555998/68e71db3-55d8-474a-9178-4303afda5cc8)
 ![pagina_web1](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/152555998/56f4f5ee-3306-46ff-b6c4-775890ca0745)
 ![pagina_web2](https://github.com/Raluca93/Curs_VCGJ_24_filme/assets/152555998/18ef67a5-cbb3-4101-a200-fa4dbbe50753)
