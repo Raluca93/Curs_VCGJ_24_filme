@@ -24,7 +24,7 @@ Worflow-ul (pipeline-ul) pentru GitHub Actions, in fisierul `.github/workflows/s
 
 Ambele pipeline-uri cloneaza codul, creaza mediul de lucru virtual (venv-ul), il activeaza si ruleaza testele (unit test - cu pytest, verificari statice cu pylint).
 
-Aplicația "Maze Runner Info" este un instrument simplu și eficient pentru a obține informații detaliate despre filmul "Maze Runner". Utilizând framework-ul Flask pentru componenta web, aplicația permite utilizatorilor să acceseze rapid și ușor datele despre filmul ales.
+Aplicația "Maze Runner Info" este un instrument simplu și eficient pentru a obține informații detaliate despre filmul "Maze Runner". Utilizând framework-ul **Flask** pentru componenta web, aplicația permite utilizatorilor să acceseze rapid și ușor datele despre filmul ales.
 
 Funcționalitățile principale includ:
 
